@@ -60,3 +60,15 @@
 - 泛化到多跳/人物转移场景
 - 规模对比 (64M vs 198M MoE)
 - CoT vs 微语格式对比
+
+## ⚠️ Cross-Template Generalization (Updated)
+
+After reviewer feedback, we generated a held-out test set using **5 entirely new templates** not seen in training:
+
+| Test Set | Templates | Accuracy |
+|----------|-----------|----------|
+| In-template (original) | 8 train templates | 83% |
+| **Cross-template (clean)** | **5 new templates** | **37%** |
+| Baseline (untrained) | — | ~20% |
+
+The cross-template accuracy confirms that entity mapping provides real generalization (+17pp over baseline), though the original 83% was inflated by template overlap. See `gen_testset.py` for the train/test template split.
