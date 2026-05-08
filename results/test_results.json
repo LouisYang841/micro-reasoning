@@ -1,0 +1,308 @@
+[
+  {
+    "answer": "书包里",
+    "mic_input": "甲启丙，置乙入丙，乃闭丙。乙安？",
+    "mic_output": "甲启丙，甲置乙入丙，乙",
+    "mic_correct": false,
+    "cn_input": "老师打开书包，把水放进书包，然后关上书包。水在哪里？",
+    "cn_output": "书包里的书包里的书包里的书包里",
+    "cn_correct": true,
+    "entity_map": "甲=老师 乙=水 丙=书包"
+  },
+  {
+    "answer": "学校上",
+    "mic_input": "甲置乙在丙上，乃往丁。乙安？",
+    "mic_output": "甲置乙在丙上，甲置乙在�",
+    "mic_correct": false,
+    "cn_input": "同学把面条放在学校上，然后去学校。面条在哪里？",
+    "cn_output": "同学在学校上，甲置于学校上，甲置于",
+    "cn_correct": true,
+    "entity_map": "甲=同学 乙=面条 丙=学校 丁=学校"
+  },
+  {
+    "answer": "抽屉里",
+    "mic_input": "甲启丙，置乙入丙，乃闭丙。乙安？",
+    "mic_output": "甲启丙，甲置乙入丙，乙",
+    "mic_correct": false,
+    "cn_input": "弟弟打开抽屉，把糖放进抽屉，然后关上抽屉。糖在哪里？",
+    "cn_output": "抽屉里的糖子里，糖子里啖�",
+    "cn_correct": true,
+    "entity_map": "甲=弟弟 乙=糖 丙=抽屉"
+  },
+  {
+    "answer": "杯子里",
+    "mic_input": "甲启丙，置乙入丙，乃闭丙。乙安？",
+    "mic_output": "甲启丙，甲置乙入丙，乙",
+    "mic_correct": false,
+    "cn_input": "弟弟打开杯子，把牛奶放进杯子，然后关上杯子。牛奶在哪里？",
+    "cn_output": "杯子里的杯子里的杯子里的杯子里",
+    "cn_correct": true,
+    "entity_map": "甲=弟弟 乙=牛奶 丙=杯子"
+  },
+  {
+    "answer": "书包里",
+    "mic_input": "甲置乙入丙，乃离矣。甲归，乙安？",
+    "mic_output": "甲启丙，甲置乙入丙，乙",
+    "mic_correct": false,
+    "cn_input": "小明把苹果放进书包，然后离开。回来，苹果在哪里？",
+    "cn_output": "小明在书包里，书包里的书包里，小明",
+    "cn_correct": true,
+    "entity_map": "甲=小明 乙=苹果 丙=书包"
+  },
+  {
+    "answer": "学校上",
+    "mic_input": "甲置乙在丙上，乃离。甲思饮，寻乙。乙安？",
+    "mic_output": "甲置乙在丙上，乙安？甲启",
+    "mic_correct": false,
+    "cn_input": "小红把苹果放在学校上，然后离开。小红想喝水，找苹果。苹果在哪里？",
+    "cn_output": "小红在学校上，小红在地上，小心地",
+    "cn_correct": true,
+    "entity_map": "甲=小红 乙=苹果 丙=学校"
+  },
+  {
+    "answer": "抽屉里",
+    "mic_input": "甲置乙入丙，乃往丁。归启丙，乙安？",
+    "mic_output": "甲置乙入丙，乙安？抽屉",
+    "mic_correct": false,
+    "cn_input": "弟弟把饼干放进抽屉，然后去桌子。回来打开抽屉，饼干在哪里？",
+    "cn_output": "抽屉里的房间里，抽屉里啖",
+    "cn_correct": true,
+    "entity_map": "甲=弟弟 乙=饼干 丙=抽屉 丁=桌子"
+  },
+  {
+    "answer": "厨房上",
+    "mic_input": "甲置乙在丙上，乃往丁。乙安？",
+    "mic_output": "甲置乙在丙上，甲置乙在�",
+    "mic_correct": false,
+    "cn_input": "弟弟把面条放在厨房上，然后去学校。面条在哪里？",
+    "cn_output": "弟弟在厨房上，甲坐丙上",
+    "cn_correct": true,
+    "entity_map": "甲=弟弟 乙=面条 丙=厨房 丁=学校"
+  },
+  {
+    "answer": "老师处",
+    "mic_input": "甲取乙与戊。乙安？",
+    "mic_output": "老师在小学上，甲置乙在丙上",
+    "mic_correct": false,
+    "cn_input": "小明把饼干拿给老师，然后饼干在哪里？",
+    "cn_output": "小明在学校上，他可能在学校上。甲置乙在",
+    "cn_correct": false,
+    "entity_map": "甲=小明 乙=饼干 戊=老师"
+  },
+  {
+    "answer": "杯子里",
+    "mic_input": "甲啖乙，乃置乙入丙。乙安？",
+    "mic_output": "甲啖乙，甲启丙，甲置乙",
+    "mic_correct": false,
+    "cn_input": "小红吃面条，然后把面条放进杯子。面条在哪里？",
+    "cn_output": "小红在桌子上，桌子上坐着丙上",
+    "cn_correct": false,
+    "entity_map": "甲=小红 乙=面条 丙=杯子"
+  },
+  {
+    "answer": "碗里",
+    "mic_input": "甲启丙，置乙入丙，乃闭丙。乙安？",
+    "mic_output": "甲启丙，甲置乙入丙，乙",
+    "mic_correct": false,
+    "cn_input": "妈妈打开碗，把糖放进碗，然后关上碗。糖在哪里？",
+    "cn_output": "碗里的糖子里，糖子里啖啖",
+    "cn_correct": true,
+    "entity_map": "甲=妈妈 乙=糖 丙=碗"
+  },
+  {
+    "answer": "碗里",
+    "mic_input": "甲置乙入丙，乃离矣。甲归，乙安？",
+    "mic_output": "甲啖乙，甲启丙，甲置乙",
+    "mic_correct": false,
+    "cn_input": "老师把面条放进碗，然后离开。回来，面条在哪里？",
+    "cn_output": "老师在碗里放入碗，然后离开。",
+    "cn_correct": true,
+    "entity_map": "甲=老师 乙=面条 丙=碗"
+  },
+  {
+    "answer": "房间上",
+    "mic_input": "甲坐丙上啖乙，乃离。甲归，乙安？",
+    "mic_output": "甲坐丙上啖乙，甲归，甲置",
+    "mic_correct": false,
+    "cn_input": "小明坐在房间上吃面包，然后离开。小明回来，面包在哪里？",
+    "cn_output": "小明坐在桌子上，桌子上坐着丙上",
+    "cn_correct": false,
+    "entity_map": "甲=小明 乙=面包 丙=房间"
+  },
+  {
+    "answer": "床上",
+    "mic_input": "甲置乙在丙上，乃往丁。乙安？",
+    "mic_output": "甲置乙在丙上，甲置乙在�",
+    "mic_correct": false,
+    "cn_input": "弟弟把糖放在床上，然后去学校。糖在哪里？",
+    "cn_output": "弟弟在学校上，甲置乙在床上",
+    "cn_correct": true,
+    "entity_map": "甲=弟弟 乙=糖 丙=床 丁=学校"
+  },
+  {
+    "answer": "老师处",
+    "mic_input": "甲取乙与戊。乙安？",
+    "mic_output": "老师在学校上，甲置乙在丙上，",
+    "mic_correct": false,
+    "cn_input": "老师把牛奶拿给老师，然后牛奶在哪里？",
+    "cn_output": "老师在学校上，通常指的是老师。老师在学校",
+    "cn_correct": false,
+    "entity_map": "甲=老师 乙=牛奶 戊=老师"
+  },
+  {
+    "answer": "书包里",
+    "mic_input": "甲启丙，置乙入丙，乃闭丙。乙安？",
+    "mic_output": "甲启丙，甲置乙入丙，乙",
+    "mic_correct": false,
+    "cn_input": "妈妈打开书包，把牛奶放进书包，然后关上书包。牛奶在哪里？",
+    "cn_output": "书包里的书包里的书包里的书包里",
+    "cn_correct": true,
+    "entity_map": "甲=妈妈 乙=牛奶 丙=书包"
+  },
+  {
+    "answer": "爸爸处",
+    "mic_input": "甲取乙与戊。乙安？",
+    "mic_output": "老师在小学上，甲置乙在丙上",
+    "mic_correct": false,
+    "cn_input": "老师把面包拿给爸爸，然后面包在哪里？",
+    "cn_output": "老师在学校上，通常情况下，老师在学校上是",
+    "cn_correct": false,
+    "entity_map": "甲=老师 乙=面包 戊=爸爸"
+  },
+  {
+    "answer": "学校上",
+    "mic_input": "甲置乙在丙上，乃离。甲思饮，寻乙。乙安？",
+    "mic_output": "甲置乙在丙上，乙安？甲启",
+    "mic_correct": false,
+    "cn_input": "爸爸把糖放在学校上，然后离开。爸爸想喝水，找糖。糖在哪里？",
+    "cn_output": "爸爸在爸爸上，爸爸",
+    "cn_correct": false,
+    "entity_map": "甲=爸爸 乙=糖 丙=学校"
+  },
+  {
+    "answer": "地上上",
+    "mic_input": "甲置乙在丙上，乃往丁。乙安？",
+    "mic_output": "甲置乙在丙上，甲置乙在�",
+    "mic_correct": false,
+    "cn_input": "小明把牛奶放在地上上，然后去学校。牛奶在哪里？",
+    "cn_output": "小明在学校上，他坐在地上，桌子上坐",
+    "cn_correct": false,
+    "entity_map": "甲=小明 乙=牛奶 丙=地上 丁=学校"
+  },
+  {
+    "answer": "杯子里",
+    "mic_input": "甲置乙入丙，乃离矣。甲归，乙安？",
+    "mic_output": "甲启丙，甲置乙入丙，乙",
+    "mic_correct": false,
+    "cn_input": "妈妈把糖放进杯子，然后离开。回来，糖在哪里？",
+    "cn_output": "妈妈在厨房上，小心地将糖",
+    "cn_correct": false,
+    "entity_map": "甲=妈妈 乙=糖 丙=杯子"
+  },
+  {
+    "answer": "袋子里",
+    "mic_input": "甲置乙入丙，乃往丁。归启丙，乙安？",
+    "mic_output": "甲置乙入丙，乙安？袋子",
+    "mic_correct": false,
+    "cn_input": "小红把苹果放进袋子，然后去车。回来打开袋子，苹果在哪里？",
+    "cn_output": "小红在袋子里啖啖，甲啖",
+    "cn_correct": true,
+    "entity_map": "甲=小红 乙=苹果 丙=袋子 丁=车"
+  },
+  {
+    "answer": "弟弟处",
+    "mic_input": "甲取乙与戊。乙安？",
+    "mic_output": "弟弟。甲置乙在丙上，�",
+    "mic_correct": false,
+    "cn_input": "妈妈把水拿给弟弟，然后水在哪里？",
+    "cn_output": "妈妈在厨房上，水在地上，",
+    "cn_correct": false,
+    "entity_map": "甲=妈妈 乙=水 戊=弟弟"
+  },
+  {
+    "answer": "厨房上",
+    "mic_input": "甲置乙在丙上，乃往丁。乙安？",
+    "mic_output": "甲置乙在丙上，甲置乙在�",
+    "mic_correct": false,
+    "cn_input": "小红把面包放在厨房上，然后去学校。面包在哪里？",
+    "cn_output": "小红在厨房上，小红坐在桌子上",
+    "cn_correct": true,
+    "entity_map": "甲=小红 乙=面包 丙=厨房 丁=学校"
+  },
+  {
+    "answer": "车上",
+    "mic_input": "甲置乙在丙上，乃离。甲思饮，寻乙。乙安？",
+    "mic_output": "甲置乙在丙上，乙安？车上",
+    "mic_correct": true,
+    "cn_input": "爸爸把面条放在车上，然后离开。爸爸想喝水，找面条。面条在哪里？",
+    "cn_output": "爸爸在车上，爸爸在车上",
+    "cn_correct": true,
+    "entity_map": "甲=爸爸 乙=面条 丙=车"
+  },
+  {
+    "answer": "抽屉里",
+    "mic_input": "甲置乙入丙，乃离矣。甲归，乙安？",
+    "mic_output": "甲置乙入丙，乙安？抽屉",
+    "mic_correct": false,
+    "cn_input": "爸爸把面条放进抽屉，然后离开。回来，面条在哪里？",
+    "cn_output": "爸爸在抽屉里，甲置乙入",
+    "cn_correct": true,
+    "entity_map": "甲=爸爸 乙=面条 丙=抽屉"
+  },
+  {
+    "answer": "床上",
+    "mic_input": "甲置乙在丙上，乃离。甲思饮，寻乙。乙安？",
+    "mic_output": "甲置乙在丙上，乙安？甲启",
+    "mic_correct": false,
+    "cn_input": "同学把面条放在床上，然后离开。同学想喝水，找面条。面条在哪里？",
+    "cn_output": "同学在同学上，甲置于老师上，同",
+    "cn_correct": false,
+    "entity_map": "甲=同学 乙=面条 丙=床"
+  },
+  {
+    "answer": "冰箱里",
+    "mic_input": "甲啖乙，乃置乙入丙。乙安？",
+    "mic_output": "甲啖乙，甲啖乙，乙安",
+    "mic_correct": false,
+    "cn_input": "弟弟吃面包，然后把面包放进冰箱。面包在哪里？",
+    "cn_output": "冰箱里的冰箱里确实存在冰箱，冰箱里",
+    "cn_correct": true,
+    "entity_map": "甲=弟弟 乙=面包 丙=冰箱"
+  },
+  {
+    "answer": "厨房上",
+    "mic_input": "甲置乙在丙上，乃往丁。乙安？",
+    "mic_output": "甲置乙在丙上，甲置乙在�",
+    "mic_correct": false,
+    "cn_input": "爸爸把面条放在厨房上，然后去学校。面条在哪里？",
+    "cn_output": "爸爸在厨房上，甲坐在桌子",
+    "cn_correct": true,
+    "entity_map": "甲=爸爸 乙=面条 丙=厨房 丁=学校"
+  },
+  {
+    "answer": "抽屉里",
+    "mic_input": "甲置乙入丙，乃离矣。甲归，乙安？",
+    "mic_output": "甲置乙入丙，乙安？抽屉",
+    "mic_correct": false,
+    "cn_input": "同学把牛奶放进抽屉，然后离开。回来，牛奶在哪里？",
+    "cn_output": "同学在抽屉里，甲置乙入丙",
+    "cn_correct": true,
+    "entity_map": "甲=同学 乙=牛奶 丙=抽屉"
+  },
+  {
+    "answer": "抽屉里",
+    "mic_input": "甲啖乙，乃置乙入丙。乙安？",
+    "mic_output": "甲啖乙，甲置乙入丙。甲",
+    "mic_correct": false,
+    "cn_input": "爸爸吃饭，然后把饭放进抽屉。饭在哪里？",
+    "cn_output": "爸爸在厨房上，爸爸在",
+    "cn_correct": false,
+    "entity_map": "甲=爸爸 乙=饭 丙=抽屉"
+  },
+  {
+    "SUMMARY": {
+      "mic_accuracy": "1/30=3%",
+      "cn_accuracy": "19/30=63%"
+    }
+  }
+]

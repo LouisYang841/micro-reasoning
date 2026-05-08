@@ -1,0 +1,6 @@
+*.bin
+*.safetensors
+minimind_micro_cuda/
+minimind_micro_cuda_15e/
+minimind_translator/
+__pycache__/
