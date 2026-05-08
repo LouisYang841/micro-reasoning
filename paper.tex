@@ -124,6 +124,29 @@ Interestingly, even the ablation model outperforms the baseline by 33pp, suggest
 Training beyond 5 epochs degrades Chinese-language accuracy from 83\% to 47\% (at epoch 15), while micro-language accuracy improves from 3\% to 63\%.
 This indicates catastrophic forgetting of the entity-tracking generalization as the model overfits to the micro-language surface form.
 
+\subsection{Scaling Template Diversity}
+
+To test whether reasoning ability scales with template coverage, we train a pure micro-language model (no Chinese translation data) on 20 templates—a 2.5$\times$ increase over the original 8.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\toprule
+\textbf{Version} & \textbf{Templates} & \textbf{Micro Acc} & \textbf{CN Transfer} \\
+\midrule
+v1 mixed (micro+CN) & 8   & 20\% & 37\% \\
+v1 pure             & 8   & 38\% & 38\% \\
+\textbf{v2 pure}    & \textbf{20} & \textbf{58\%} & 16\% \\
+\bottomrule
+\end{tabular}
+\caption{Scaling template diversity in pure micro-language training. Cross-template evaluation throughout.}
+\label{tab:scaling}
+\end{table}
+
+Micro-language accuracy improves from 38\% to 58\% (+20pp) when expanding from 8 to 20 templates, suggesting that symbolic reasoning ability scales with the diversity of training patterns. Chinese transfer drops in pure micro training, consistent with the interpretation that micro-language and Chinese output are separable capabilities.
+
+These results hint at an \textbf{emergence threshold} for symbolic reasoning: as template diversity crosses a critical density, the model transitions from memorizing individual templates to acquiring an abstract entity-tracking operation. Full characterization of this threshold requires further scaling experiments.
+
 \subsection{Error Analysis}
 
 The remaining errors (17\%) fall into two categories:
