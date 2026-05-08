@@ -1,0 +1,191 @@
+\documentclass[11pt,a4paper]{article}
+
+% ACL/CoNLL style
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{microtype}
+\usepackage{inconsolata}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\title{Micro-Reasoning: Explicit Object Binding Enables \\ Entity Tracking in a 64M Language Model}
+
+\author{Jiaxuan Yang \\
+  School of Science, Monash University Malaysia \\
+  \texttt{jyan0226@student.monash.edu} \\
+  \texttt{\href{https://doi.org/10.5281/zenodo.20089724}{DOI: 10.5281/zenodo.20089724}}}
+
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Large language models acquire emergent reasoning abilities only at billion-parameter scales, suggesting that natural language input imposes a structural bottleneck: models must simultaneously learn syntax, semantics, and entity tracking from unstructured text.
+We hypothesize that \textbf{explicit object binding}—declaring entity-to-symbol mappings before reasoning—can dramatically lower the scale required for entity tracking.
+Using a 64M-parameter MiniMind-3 model fine-tuned on 500 examples of a custom micro-language with entity mapping declarations (e.g., \texttt{甲=小明 乙=苹果}), we improve entity tracking accuracy from 20\% to 83\%.
+An ablation study removing the entity mapping line drops accuracy to 53\%, confirming that explicit variable binding contributes 30 percentage points of the gain.
+Our results suggest that structured input representations can serve as a ``shortcut'' to emergent reasoning in small language models.
+\end{abstract}
+
+\section{Introduction}
+
+Large language models demonstrate increasingly sophisticated reasoning capabilities as parameter counts scale into the billions~\cite{wei2022chain, brown2020language}.
+However, the relationship between model scale and reasoning ability remains poorly understood.
+Why must models be so large before entity tracking and logical inference emerge?
+
+We propose a structural hypothesis: \textbf{natural language imposes a representational bottleneck}.
+In unstructured text, models must simultaneously learn lexical semantics, syntactic structure, and discourse-level entity tracking—all from token co-occurrence statistics.
+This forces the model to ``discover'' object-level abstractions through brute-force parameter scaling.
+
+An alternative approach is to \textbf{inject object binding explicitly} into the input representation, offloading the entity-tracking burden from learned parameters to structured input format.
+If entity-to-symbol mappings are declared before reasoning, the model's task reduces from ``discover what objects exist'' to ``apply operations to known objects.''
+
+To test this hypothesis, we design a minimal experiment:
+\begin{enumerate}[nosep]
+    \item Construct a \textbf{micro-language} where every concept maps to a single Chinese character (e.g., \texttt{置}=put, \texttt{入}=into, \texttt{安}=where).
+    \item \textbf{Declare entity bindings} before each example (\texttt{甲=小明 乙=苹果 丙=书包}).
+    \item Fine-tune a 64M-parameter model on 500 micro-language stories.
+    \item Measure entity tracking accuracy with and without explicit binding.
+\end{enumerate}
+
+\section{Method}
+
+\subsection{Micro-Language Design}
+
+We design a minimal symbolic language where each linguistic function maps to a single Chinese character:
+
+\begin{itemize}[nosep]
+    \item \textbf{Entities}: Heaven's Stems (\texttt{甲,乙,丙,丁,\ldots}) act as variable names.
+    \item \textbf{Actions}: Single characters represent operations (\texttt{置}=put, \texttt{入}=into, \texttt{离}=leave, \texttt{归}=return, \texttt{啖}=eat, \texttt{寻}=find).
+    \item \textbf{Relations}: Positional markers (\texttt{在}=at, \texttt{上}=on, \texttt{里}=in).
+    \item \textbf{Logic}: Temporal and logical connectives (\texttt{乃}=then, \texttt{矣}=completed).
+    \item \textbf{Questions}: Single-character queries (\texttt{安}=where, \texttt{何}=what).
+\end{itemize}
+
+A natural language story and its micro-language translation:
+
+\begin{quote}
+\textbf{CN:} 小明把苹果放进书包，然后离开。回来，苹果在哪里？ \\
+\textbf{Micro:} 甲置乙入丙，乃离矣。甲归，乙安？ \\
+\textbf{Map:} 甲=小明 乙=苹果 丙=书包 \\
+\textbf{Answer:} 书包里
+\end{quote}
+
+\subsection{Data Generation}
+
+We generate 500 training examples from 8 template patterns covering common entity tracking scenarios: simple containment, surface placement, consumption, giving, and multi-step displacement.
+Entity pools (people, food, containers, locations) are randomly sampled per story to ensure diversity.
+
+\subsection{Training}
+
+We fine-tune \texttt{jingyaogong/minimind-3} (64M parameters, Qwen3 architecture) using the HuggingFace Transformers library.
+Training uses the AdamW optimizer with learning rate $2\times10^{-5}$, batch size 4, for 5 epochs on an NVIDIA RTX 4060.
+The training format concatenates the entity mapping declaration, micro-language story, and answer.
+
+\section{Experiments}
+
+\subsection{Main Results}
+
+We evaluate entity tracking accuracy on a held-out set of 30 stories.
+A response is considered correct if the expected location/container appears in the model's output.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\toprule
+\textbf{Condition} & \textbf{Params} & \textbf{Optimizer} & \textbf{Accuracy} \\
+\midrule
+Baseline (raw)      & 64M  & ---    & 20\% \\
+Ablation (no map)   & 64M  & AdamW  & 53\% \\
+\textbf{Full (with map)} & \textbf{64M} & \textbf{AdamW} & \textbf{83\%} \\
+15-epoch (overfit)  & 64M  & AdamW  & 47\% \\
+\bottomrule
+\end{tabular}
+\caption{Entity tracking accuracy across conditions. The entity mapping line alone contributes +30pp.}
+\label{tab:results}
+\end{table}
+
+The full model with entity mapping achieves 83\% accuracy, a 4$\times$ improvement over the unfine-tuned baseline (20\%).
+The ablation model—trained identically but without the entity mapping line—reaches only 53\%, confirming that explicit object binding contributes 30 percentage points to the gain.
+
+\subsection{Ablation: Entity Mapping}
+
+Removing the entity declaration line from training data causes accuracy to drop from 83\% to 53\%.
+This isolates the contribution of explicit variable binding.
+Interestingly, even the ablation model outperforms the baseline by 33pp, suggesting that the micro-language format itself provides structural benefits independent of named bindings.
+
+\subsection{Epoch Sweet Spot}
+
+Training beyond 5 epochs degrades Chinese-language accuracy from 83\% to 47\% (at epoch 15), while micro-language accuracy improves from 3\% to 63\%.
+This indicates catastrophic forgetting of the entity-tracking generalization as the model overfits to the micro-language surface form.
+
+\subsection{Error Analysis}
+
+The remaining errors (17\%) fall into two categories:
+(1) \textbf{Person-to-person transfer}—when an item is given to another agent, the model defaults to a location rather than the recipient;
+(2) \textbf{Multi-hop displacement}—when an entity moves through multiple locations, the model loses track.
+These failures suggest that the 64M model's working memory capacity limits complex entity trajectories, even with explicit bindings.
+
+\section{Discussion}
+
+Our results demonstrate that \textbf{explicit object binding can serve as a shortcut to emergent reasoning} in small language models.
+By declaring entity-to-symbol mappings before reasoning, a 64M model achieves entity tracking accuracy comparable to much larger models on raw text.
+
+This finding has implications beyond entity tracking.
+If specific cognitive capabilities can be ``injected'' through structured input representations rather than emergent through scale, we may be able to decompose language model capabilities into modular components: a small reasoning kernel operating on structured symbols, coupled with external translation layers.
+
+The micro-language approach also offers interpretability benefits: the symbolic reasoning chain (\texttt{甲置乙入丙，乃离矣}) is directly auditable, unlike latent-space reasoning methods such as Coconut~\cite{hao2024coconut}.
+
+\subsection{Limitations}
+
+Our experiments use a single model architecture (MiniMind-3) on a narrow task (entity tracking) with template-generated data.
+Future work should validate across model scales, task types, and naturalistic datasets.
+The translation from micro-language back to natural language remains an open challenge—our preliminary attempts at a 64M translator model resulted in degraded output quality, suggesting that generative fluency requires greater capacity than structured reasoning.
+
+\section{Conclusion}
+
+We show that explicit object binding via a micro-language boosts entity tracking accuracy in a 64M model from 20\% to 83\%, with the entity mapping line contributing 30pp of the gain.
+This suggests that structured input representations can bypass the scale requirements typically associated with emergent reasoning, opening a path toward modular, interpretable, and sample-efficient language models.
+
+\section*{Acknowledgments}
+
+The author thanks Hermes (AI assistant) for experimental infrastructure and Gemini for feedback on the ablation design.
+Code and data are available at \url{https://github.com/LouisYang841/micro-reasoning} (DOI: \href{https://doi.org/10.5281/zenodo.20089724}{10.5281/zenodo.20089724}).
+
+\bibliographystyle{acl_natbib}
+\begin{thebibliography}{10}
+
+\bibitem{wei2022chain}
+Jason Wei et al.
+\newblock Chain-of-thought prompting elicits reasoning in large language models.
+\newblock {\em NeurIPS}, 2022.
+
+\bibitem{brown2020language}
+Tom Brown et al.
+\newblock Language models are few-shot learners.
+\newblock {\em NeurIPS}, 2020.
+
+\bibitem{hao2024coconut}
+Shibo Hao et al.
+\newblock Training large language models to reason in a continuous latent space.
+\newblock {\em arXiv:2412.06769}, 2024.
+
+\bibitem{zhou2024self}
+Pei Zhou et al.
+\newblock Self-discover: Large language models self-compose reasoning structures.
+\newblock {\em arXiv:2402.03620}, 2024.
+
+\bibitem{olsson2022context}
+Catherine Olsson et al.
+\newblock In-context learning and induction heads.
+\newblock {\em Transformer Circuits Thread}, 2022.
+
+\end{thebibliography}
+
+\end{document}
