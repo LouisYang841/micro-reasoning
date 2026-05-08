@@ -82,3 +82,34 @@ The cross-template accuracy confirms that entity mapping provides real generaliz
 | **v2 pure** | **20** | **58%** | 16% |
 
 Pure micro-language training with increased template diversity doubles reasoning accuracy, suggesting an emergent threshold for symbolic reasoning in 64M models.
+
+## ⚠️ Translation Head (Negative Result)
+
+Attempting to add a Chinese translation layer on top of the v2 pure micro model (58%) by fine-tuning only the top 2 layers + lm_head resulted in catastrophic interference: micro accuracy dropped to 19% and Chinese to 0%. This suggests that in a 64M model, micro reasoning and natural language generation compete for the same parameters, supporting a **two-model architecture** (reasoning model + translation model).
+
+## 📁 File Map
+
+| File | Purpose |
+|------|---------|
+| `src/train_cuda.py` | v1 mixed training (8 templates) |
+| `src/train_pure_micro.py` | v1 pure micro training |
+| `src/train_v2_pure.py` | v2 pure micro (20 templates) |
+| `src/train_ablate.py` | Ablation (no entity map) |
+| `src/train_translate_head.py` | Translation head (negative result) |
+| `src/gen_v2.py` | v2 template generator (20 templates) |
+| `src/test_clean.py` | Cross-template evaluation |
+| `src/test_v2.py` | v2 model test |
+| `src/test_translate_head.py` | Translation head test |
+| `data/micro_train_v2.jsonl` | 2000 examples, 20 templates |
+| `data/micro_test_clean.jsonl` | 100 cross-template questions |
+
+## 📊 Full Results Matrix
+
+| Condition | Templates | Micro Acc | CN Acc |
+|-----------|-----------|-----------|--------|
+| Baseline (raw) | — | — | ~20% |
+| v1 mixed, entity map | 8 | 20% | 37% |
+| v1 mixed, no map (ablate) | 8 | — | 53% |
+| v1 pure micro | 8 | 38% | 38% |
+| **v2 pure micro** | **20** | **58%** | 16% |
+| v2 + translation head | 20 | 19% | 0% |
