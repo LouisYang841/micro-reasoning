@@ -40,3 +40,11 @@ if __name__ == "__main__":
         cn = translate(ans, emap)
         em = translate_emoji(ans, emap)
         print(f"微语: {ans} → 中文: {cn} → Emoji: {em}")
+
+
+def story_to_emoji(text: str) -> str:
+    """把中文故事变成 emoji 版"""
+    result = text
+    for cn, em in sorted(EMOJI_ENTITIES.items(), key=lambda x: -len(x[0])):
+        result = result.replace(cn, em)
+    return result
