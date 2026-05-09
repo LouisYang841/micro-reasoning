@@ -128,3 +128,15 @@ Fixed test set, 300 questions across 3 difficulty levels:
 v3's catastrophic collapse (58%→54%→3%) demonstrates severe training instability at this scale.
 
 v1 model corrupted during earlier training, excluded from bench.
+
+## 📊 Unified 300-Question Bench (v1/v2/v3)
+
+Same fixed test set across all versions:
+
+| Model | Templates | MIC | CN | Simple MIC | Medium MIC | Hard MIC |
+|-------|-----------|-----|-----|------------|------------|----------|
+| v1 pure | 8 | 28% | 29% | 55% | 30% | 0% |
+| v2 pure | 20 | 36% | 10% | 72% | 34% | 1% |
+| v3 pure | 35 | 3% | 6% | 0% | 10% | 0% |
+
+**Trends**: v1→v2: +8pp MIC, simple +17pp. v2→v3: training failure (cause under investigation). Hard tier ≈ 0% across all models — multi-hop reasoning is a hard ceiling at 64M scale.
