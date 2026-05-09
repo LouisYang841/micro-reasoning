@@ -140,3 +140,22 @@ Same fixed test set across all versions:
 | v3 pure | 35 | 3% | 6% | 0% | 10% | 0% |
 
 **Trends**: v1→v2: +8pp MIC, simple +17pp. v2→v3: training failure (cause under investigation). Hard tier ≈ 0% across all models — multi-hop reasoning is a hard ceiling at 64M scale.
+
+## 🔬 Reasoning/Format Decoupling (v4)
+
+| Model | /tmpl | MIC | Observed behavior |
+|-------|-------|-----|-------------------|
+| v4_20x50 | 50 | 29% (~0% simple) | **Reasoning correct** (乙=书包) but output format broken |
+| v2 | 100 | 36% (72% simple) | **Sweet spot**: both reasoning and format aligned |
+| v3_fixed | 143 | 3% | Format learned but **reasoning collapsed** (memorization) |
+
+**Key insight**: In 64M models, symbolic reasoning and output formatting are independent learning objectives competing for the same sample budget. At 50/template, format is unstable; at 143/template, memorization overtakes reasoning; at ~100/template, both converge.
+
+## 🤗 HuggingFace Models
+
+| Model | HF Repo | Description |
+|-------|---------|-------------|
+| v2 | `LouisYang841/minimind-v2-micro` | Best model (20 templates, 100/tmpl) |
+| v1 | `LouisYang841/minimind-v1-micro` | Baseline (8 templates) |
+| v3f | `LouisYang841/minimind-v3-fixed` | Overfitting case study |
+| v4 | `LouisYang841/minimind-v4-20x50` | Density experiment |
