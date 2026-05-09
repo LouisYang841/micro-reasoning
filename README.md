@@ -159,3 +159,20 @@ Same fixed test set across all versions:
 | v1 | `LouisYang841/minimind-v1-micro` | Baseline (8 templates) |
 | v3f | `LouisYang841/minimind-v3-fixed` | Overfitting case study |
 | v4 | `LouisYang841/minimind-v4-20x50` | Density experiment |
+
+## 🔬 Reasoning/Format Decoupling (v4)
+
+| Model | /tmpl | Simple MIC | Observed |
+|-------|-------|------------|----------|
+| v4_20x50 | 50 | ~0% | Reasoning correct (乙=书包) but output format broken |
+| v2 | 100 | 72% | Sweet spot: reasoning + format aligned |
+| v3_fixed | 143 | 3% | Format learned, reasoning memorized |
+
+In 64M models, symbolic reasoning and output formatting are independent learning objectives competing for the same sample budget. ~100/tmpl is the convergence sweet spot.
+
+## 🤗 HF Models (one repo per model)
+
+| Model | Repo |
+|-------|------|
+| v2 | `LouisYang841/minimind-v2-micro` |
+| v1 | `LouisYang841/minimind-v1-micro` |
