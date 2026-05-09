@@ -113,3 +113,18 @@ Attempting to add a Chinese translation layer on top of the v2 pure micro model 
 | v1 pure micro | 8 | 38% | 38% |
 | **v2 pure micro** | **20** | **58%** | 16% |
 | v2 + translation head | 20 | 19% | 0% |
+
+## 📊 300-Question Bench (Difficulty Stratified)
+
+Fixed test set, 300 questions across 3 difficulty levels:
+
+| Model | Templates | MIC | Simple | Medium | Hard | CN |
+|-------|-----------|-----|--------|--------|------|-----|
+| v2 pure | 20 | 36% | 72% | 34% | 1% | 10% |
+| v3 pure | 35 | 3% | 0% | 10% | 0% | 6% |
+
+**Key finding**: 64M models can handle single-hop reasoning (72%) but collapse on multi-hop chains (1%). This reveals a measurable reasoning-depth ceiling for small language models.
+
+v3's catastrophic collapse (58%→54%→3%) demonstrates severe training instability at this scale.
+
+v1 model corrupted during earlier training, excluded from bench.
