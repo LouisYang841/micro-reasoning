@@ -99,3 +99,30 @@ cd minimind/ && python3 train_micro_v2.py
 - **EC2 t4g.small**: ARM CPU, 1.8GB RAM, 29GB disk. Can only do inference or partial training.
 - **FlowX13 4060**: 6GB VRAM, D drive 300GB. Recommended for all training.
 - **Windows SSH**: `ssh flowx13` (reverse tunnel via localhost:2222)
+
+## V4 Density Control Experiments
+
+To reproduce the sample-density sweet spot finding:
+
+```bash
+# Generate data (35 or 20 templates × 50 samples each)
+python src/gen_v4.py
+# Train both variants
+python src/train_v4.py
+# Test on bench
+python src/bench_v4.py
+```
+
+### Key finding (Reform/Format Decoupling)
+At 50 samples/template, the model correctly identifies entities ("乙=书包") but fails to produce the right answer format. At 143 samples/template, the output format is correct but reasoning is memorized. ~100 samples/template is the convergence sweet spot where both reasoning and format align.
+
+### Full Result Matrix
+| Model | Templates | /template | MIC | Simple | Medium | Hard |
+|-------|-----------|-----------|-----|--------|--------|------|
+| v1 | 8 | 62 | 28% | 55% | 30% | 0% |
+| v2 | 20 | 100 | 36% | 72% | 34% | 1% |
+| v4_20x50 | 20 | 50 | 29% | ~0%* | 27% | 2% |
+| v4_35x50 | 35 | 50 | 24% | 17% | 6% | 1% |
+| v3_fixed | 35 | 143 | 3% | 3% | 3% | 2% |
+
+*Reasoning correct but output format broken
