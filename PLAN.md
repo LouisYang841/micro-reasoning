@@ -1,43 +1,40 @@
 # 实体追踪微语实验 — Workshop Paper Plan
 
 ## 目标会议
-- **BabyLM Challenge** (EMNLP/CoNLL) — 小模型+小数据的语法逻辑
-- **ICLR Tiny Papers Track** — 2页核心，鼓励算力有限的聪明发现
-- **Neuro-Symbolic Workshops** — 神经网络+符号逻辑的变量绑定
+- **BabyLM Challenge** @ EMNLP 2026 (7月截止)
+- ICLR Tiny Papers (备选)
+- Neuro-Symbolic Workshops (备选)
+
+## 核心发现（5条 → 1个统一论题）
+
+> 64M模型的符号推理能力对训练数据的结构极度敏感，在绑定方式、模板多样性、样本密度三个维度上存在明确甜点区。推理能力和输出格式是独立的学习目标，在小样本预算下互相竞争。
+
+## 已完成
+- [x] 假说验证 (20%→36% cross-template)
+- [x] 消融实验 (entity map +30pp)
+- [x] 300题分层bench (simple 72% / medium 34% / hard 1%)
+- [x] 模板scaling (8→20→35, syntax drift确诊)
+- [x] 密度控制 (50/100/143 per-tmpl, sweet spot ~100)
+- [x] 推理/格式解耦 (v4_20x50: 推理对但格式错)
+- [x] Emoji pipeline (translator.py + translator_emoji.py)
+- [x] GitHub repo + Zenodo DOI + v0.3 release
+- [x] 6个 HuggingFace 模型
+- [x] LaTeX 论文 (含density sweet spot section)
+- [x] 复现指南 + Reviewer notes
 
 ## 论文结构
+1. **Introduction**: 自然语言瓶颈 → 显式绑定假说
+2. **Method**: 微语设计 + 数据生成 + 训练配置
+3. **Experiments**:
+   - 3.1 Main Results (跨模板36%)
+   - 3.2 Ablation (entity map +30pp)
+   - 3.3 Depth-Accuracy Wall (72/34/1)
+   - 3.4 Template Scaling (8→20→35)
+   - 3.5 Density Sweet Spot (50/100/143)
+   - 3.6 Error Analysis
+4. **Discussion**: 三维度甜点 + 解耦证据 → 模块化推理架构
+5. **Conclusion**: 结构化输入 = 涌现捷径
 
-### 1. Introduction (引言)
-- 痛点：小模型缺乏逻辑推理能力（LLM涌现需要billions）
-- 假说：自然语言的语法噪音+缺乏显式对象绑定是瓶颈
-- 解法：微型语言 + 实体映射声明
-
-### 2. Methodology (方法)
-- 微语字典：动作(置 入 离 归)、疑问(安)、逻辑(乃 矣)
-- 数据构造：500条中文故事→微语翻译（自动模板）
-- 训练：MiniMind-3 64M, AdamW, 5 epoch
-
-### 3. Experiments (实验)
-- 核心表：裸模20% → 消融53% → 完整83%
-- 消融证明实体映射行贡献+30pp
-- 错误分析：多跳转移是主要失败模式
-- Epoch U型曲线：5e甜点，15e过拟合
-
-### 4. Conclusion & Future Work
-- 双子星架构：推理模型(64M) + 翻译模型(64M) = 128M
-- 合计128M实现自然语言推理闭环
-
-## 已完成工作
-- [x] 假说验证 (20%→83% in-template, 37% cross-template)
-- [x] 消融实验 (+30pp归因)
-- [x] 错误分析 (多跳/人物转移瓶颈)
-- [x] 跨模板泛化 (5个新模板, 100题无泄露)
-- [x] 纯微语训练 (v1 38%, v2 58%)
-- [x] 模板scaling实验 (8→20模板, +20pp)
-- [x] 翻译头实验 (negative: 64M单模型不可行)
-- [x] GitHub repo + Zenodo DOI
-- [x] LaTeX 草稿 (BabyLM格式)
-- [x] 全量归档 push
-- [ ] 翻译模型 (双子星下半 — 需换大基座)
-- [ ] 更多模板scaling (20→50→100)
-- [ ] 最终论文提交
+## 待办
+- [ ] Claude 模拟审稿
+- [ ] 最终提交
