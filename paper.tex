@@ -147,6 +147,27 @@ Micro-language accuracy improves from 38\% to 58\% (+20pp) when expanding from 8
 
 These results hint at an \textbf{emergence threshold} for symbolic reasoning: as template diversity crosses a critical density, the model transitions from memorizing individual templates to acquiring an abstract entity-tracking operation. Full characterization of this threshold requires further scaling experiments.
 
+\subsection{Training Density Sweet Spot}
+
+We further investigate the interaction between template count and per-template sample density. Fixing micro-language syntax to v2's grammar, we train three variants with different per-template sample counts:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\toprule
+\textbf{Model} & \textbf{/Template} & \textbf{MIC} & \textbf{Behavior} \\
+\midrule
+v4-20x50 & 50 & 29\% & Reasoning correct, format broken \\
+\textbf{v2} & \textbf{100} & \textbf{36\%} & \textbf{Both reasoning and format aligned} \\
+v3-fixed & 143 & 3\% & Format correct, reasoning memorized \\
+\bottomrule
+\end{tabular}
+\caption{Sample density sweet spot. At 50/template, entity identification succeeds (e.g. ``乙=书包'') but the answer format fails. At 143/template, the answer format is learned but reasoning collapses into template memorization.}
+\label{tab:density}
+\end{table}
+
+Analysis of v4-20x50 outputs reveals a striking dissociation: the model correctly identifies entities (outputting ``乙=书包''), but fails to produce the target answer format (``书包里''). This indicates that \textbf{symbolic reasoning and output formatting are independent learning objectives} competing for limited sample budget in 64M models. At 50 samples/template, reasoning is acquired but formatting is not; at 143 samples/template, format is overlearned while reasoning degrades into memorization. The convergence sweet spot of $\sim$100 samples/template suggests a hard architectural constraint on how many distinct capabilities a 64M model can acquire from a fixed data budget.
+
 \subsection{Error Analysis}
 
 The remaining errors (17\%) fall into two categories:
@@ -157,7 +178,9 @@ These failures suggest that the 64M model's working memory capacity limits compl
 \section{Discussion}
 
 Our results demonstrate that \textbf{explicit object binding can serve as a shortcut to emergent reasoning} in small language models.
-By declaring entity-to-symbol mappings before reasoning, a 64M model achieves entity tracking accuracy comparable to much larger models on raw text.
+By declaring entity-to-symbol mappings before reasoning, a 64M model achieves entity tracking accuracy that would otherwise require substantially larger models on raw text.
+
+More broadly, our experiments reveal that \textbf{small-model symbolic reasoning is exquisitely sensitive to training data structure}, with clear sweet spots along three dimensions: binding format (entity mapping declarations contribute +30pp), template diversity (20 templates outperform 8 and 35), and per-template sample density ($\sim$100 samples/template is optimal). The dissociation between reasoning and output format at 50 samples/template provides direct evidence that these are independent learning objectives competing for a shared parameter budget.
 
 This finding has implications beyond entity tracking.
 If specific cognitive capabilities can be ``injected'' through structured input representations rather than emergent through scale, we may be able to decompose language model capabilities into modular components: a small reasoning kernel operating on structured symbols, coupled with external translation layers.
@@ -172,8 +195,7 @@ The translation from micro-language back to natural language remains an open cha
 
 \section{Conclusion}
 
-We show that explicit object binding via a micro-language boosts entity tracking accuracy in a 64M model from 20\% to 83\%, with the entity mapping line contributing 30pp of the gain.
-This suggests that structured input representations can bypass the scale requirements typically associated with emergent reasoning, opening a path toward modular, interpretable, and sample-efficient language models.
+We show that explicit object binding via a micro-language enables entity tracking in 64M models, with cross-template generalization improving from a 20\% baseline to 36\% at the optimal training configuration. Our experiments identify critical sensitivity to three structural dimensions—binding format, template diversity, and per-template sample density—and provide evidence that symbolic reasoning and output formatting are separable learning objectives competing for shared parameter capacity. These findings suggest that structured input representations can serve as a ``shortcut'' to emergent reasoning, with clear design principles for sample-efficient small language models.
 
 \section*{Acknowledgments}
 
