@@ -1,0 +1,300 @@
+{"cn": "小红从柜子里取出笔放在车上。笔在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "车上", "entity_map": "甲=小红 乙=笔 丙=柜子 丁=车", "difficulty": "medium"}
+{"cn": "小明本来想把球放进抽屉，结果放错放进柜子。球在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=小明 乙=球 戊=老师", "difficulty": "hard"}
+{"cn": "老板把钥匙放进冰箱。钥匙在哪？", "mic": "甲置乙入丙。乙安？", "answer": "冰箱里", "entity_map": "甲=老板 乙=钥匙 丙=冰箱", "difficulty": "simple"}
+{"cn": "小明把衣服放进碗。衣服在哪？", "mic": "甲置乙入丙。乙安？", "answer": "碗里", "entity_map": "甲=小明 乙=衣服 丙=碗", "difficulty": "simple"}
+{"cn": "小明把钥匙放进盒子。钥匙在哪？", "mic": "甲置乙入丙。乙安？", "answer": "盒子里", "entity_map": "甲=小明 乙=钥匙 丙=盒子", "difficulty": "simple"}
+{"cn": "弟弟把球放进箱子里，又把箱子放进柜子。球在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=弟弟 乙=球 戊=老板", "difficulty": "hard"}
+{"cn": "妈妈把篮子里的钱包倒了出来。钱包在哪？", "mic": "甲倾丙，乙出。乙安？", "answer": "篮子旁", "entity_map": "甲=妈妈 乙=钱包 丙=篮子 丁=厨房", "difficulty": "medium"}
+{"cn": "小明吃了笔，把剩下的放进柜子。笔在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "柜子里", "entity_map": "甲=小明 乙=笔 丙=柜子 丁=沙发", "difficulty": "medium"}
+{"cn": "弟弟把眼镜放进篮子。眼镜在哪？", "mic": "甲置乙入丙。乙安？", "answer": "篮子里", "entity_map": "甲=弟弟 乙=眼镜 丙=篮子", "difficulty": "simple"}
+{"cn": "老师把钱包放进箱子里，又把箱子放进柜子。钱包在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=老师 乙=钱包 戊=妈妈", "difficulty": "hard"}
+{"cn": "邻居把衣服放进盒子。衣服在哪？", "mic": "甲置乙入丙。乙安？", "answer": "盒子里", "entity_map": "甲=邻居 乙=衣服 丙=盒子", "difficulty": "simple"}
+{"cn": "老板把书给了('桌子', '爸爸')。书在哪？", "mic": "甲取乙与戊。乙安？", "answer": "('桌子', '爸爸')处", "entity_map": "甲=老板 乙=书 戊=妈妈", "difficulty": "hard"}
+{"cn": "妈妈吃了眼镜，把剩下的放进柜子。眼镜在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "柜子里", "entity_map": "甲=妈妈 乙=眼镜 丙=柜子 丁=学校", "difficulty": "medium"}
+{"cn": "老板把笔给了('沙发', '小明')。笔在哪？", "mic": "甲取乙与戊。乙安？", "answer": "('沙发', '小明')处", "entity_map": "甲=老板 乙=笔 戊=同学", "difficulty": "hard"}
+{"cn": "小明把伞给了('房间', '邻居')。伞在哪？", "mic": "甲取乙与戊。乙安？", "answer": "('房间', '邻居')处", "entity_map": "甲=小明 乙=伞 戊=爸爸", "difficulty": "hard"}
+{"cn": "弟弟和('学校', '妈妈')交换了球和姐姐的东西。球在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "('学校', '妈妈')处", "entity_map": "甲=弟弟 乙=球 戊=姐姐", "difficulty": "hard"}
+{"cn": "妈妈和('阳台', '小明')交换了手机和小明的东西。手机在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "('阳台', '小明')处", "entity_map": "甲=妈妈 乙=手机 戊=小明", "difficulty": "hard"}
+{"cn": "小明把钱包放进袋子。钱包在哪？", "mic": "甲置乙入丙。乙安？", "answer": "袋子里", "entity_map": "甲=小明 乙=钱包 丙=袋子", "difficulty": "simple"}
+{"cn": "老板从锅里取出手机放在桌子上。手机在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "桌子上", "entity_map": "甲=老板 乙=手机 丙=锅 丁=桌子", "difficulty": "medium"}
+{"cn": "邻居把花放进篮子，然后去厨房。花在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "篮子里", "entity_map": "甲=邻居 乙=花 丙=篮子 丁=厨房", "difficulty": "medium"}
+{"cn": "弟弟本来想把伞放进抽屉，结果放错放进柜子。伞在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=弟弟 乙=伞 戊=老师", "difficulty": "hard"}
+{"cn": "小明把遥控器放进锅。遥控器在哪？", "mic": "甲置乙入丙。乙安？", "answer": "锅里", "entity_map": "甲=小明 乙=遥控器 丙=锅", "difficulty": "simple"}
+{"cn": "弟弟把球放进箱子里，又把箱子放进柜子。球在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=弟弟 乙=球 戊=同学", "difficulty": "hard"}
+{"cn": "小红本来想把书放进抽屉，结果放错放进柜子。书在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=小红 乙=书 戊=邻居", "difficulty": "hard"}
+{"cn": "邻居把遥控器放进篮子，然后去家。遥控器在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "篮子里", "entity_map": "甲=邻居 乙=遥控器 丙=篮子 丁=家", "difficulty": "medium"}
+{"cn": "弟弟把书放进抽屉，然后去厨房。书在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "抽屉里", "entity_map": "甲=弟弟 乙=书 丙=抽屉 丁=厨房", "difficulty": "medium"}
+{"cn": "邻居本来想把球放进抽屉，结果放错放进柜子。球在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=邻居 乙=球 戊=同学", "difficulty": "hard"}
+{"cn": "弟弟和邻居交换了花和同学的东西。花在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "邻居处", "entity_map": "甲=弟弟 乙=花 戊=同学", "difficulty": "hard"}
+{"cn": "老师把帽子放进冰箱。帽子在哪？", "mic": "甲置乙入丙。乙安？", "answer": "冰箱里", "entity_map": "甲=老师 乙=帽子 丙=冰箱", "difficulty": "simple"}
+{"cn": "老师把帽子放进盒子。帽子在哪？", "mic": "甲置乙入丙。乙安？", "answer": "盒子里", "entity_map": "甲=老师 乙=帽子 丙=盒子", "difficulty": "simple"}
+{"cn": "老板把钥匙放进箱子里，又把箱子放进柜子。钥匙在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=老板 乙=钥匙 戊=同学", "difficulty": "hard"}
+{"cn": "小红吃了球，把剩下的放进书包。球在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "书包里", "entity_map": "甲=小红 乙=球 丙=书包 丁=桌子", "difficulty": "medium"}
+{"cn": "爸爸从篮子里取出眼镜放在公园上。眼镜在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "公园上", "entity_map": "甲=爸爸 乙=眼镜 丙=篮子 丁=公园", "difficulty": "medium"}
+{"cn": "邻居把球放进书包。球在哪？", "mic": "甲置乙入丙。乙安？", "answer": "书包里", "entity_map": "甲=邻居 乙=球 丙=书包", "difficulty": "simple"}
+{"cn": "小明把遥控器放进箱子里，又把箱子放进柜子。遥控器在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=小明 乙=遥控器 戊=姐姐", "difficulty": "hard"}
+{"cn": "小明把花放进柜子，然后去房间。花在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "柜子里", "entity_map": "甲=小明 乙=花 丙=柜子 丁=房间", "difficulty": "medium"}
+{"cn": "同学把帽子放进箱子里，又把箱子放进柜子。帽子在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=同学 乙=帽子 戊=爸爸", "difficulty": "hard"}
+{"cn": "小红吃了钱包，把剩下的放进杯子。钱包在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "杯子里", "entity_map": "甲=小红 乙=钱包 丙=杯子 丁=车", "difficulty": "medium"}
+{"cn": "弟弟把眼镜放进书包，然后去床。眼镜在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "书包里", "entity_map": "甲=弟弟 乙=眼镜 丙=书包 丁=床", "difficulty": "medium"}
+{"cn": "小明把帽子放进篮子。帽子在哪？", "mic": "甲置乙入丙。乙安？", "answer": "篮子里", "entity_map": "甲=小明 乙=帽子 丙=篮子", "difficulty": "simple"}
+{"cn": "弟弟把钥匙给了妈妈。钥匙在哪？", "mic": "甲取乙与戊。乙安？", "answer": "妈妈处", "entity_map": "甲=弟弟 乙=钥匙 戊=小明", "difficulty": "hard"}
+{"cn": "爸爸把遥控器给了('沙发', '小明')。遥控器在哪？", "mic": "甲取乙与戊。乙安？", "answer": "('沙发', '小明')处", "entity_map": "甲=爸爸 乙=遥控器 戊=同学", "difficulty": "hard"}
+{"cn": "妈妈把书放进箱子里，又把箱子放进柜子。书在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=妈妈 乙=书 戊=弟弟", "difficulty": "hard"}
+{"cn": "姐姐把钱包放进抽屉。钱包在哪？", "mic": "甲置乙入丙。乙安？", "answer": "抽屉里", "entity_map": "甲=姐姐 乙=钱包 丙=抽屉", "difficulty": "simple"}
+{"cn": "邻居和姐姐交换了帽子和老板的东西。帽子在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "姐姐处", "entity_map": "甲=邻居 乙=帽子 戊=老板", "difficulty": "hard"}
+{"cn": "同学把冰箱里的遥控器倒了出来。遥控器在哪？", "mic": "甲倾丙，乙出。乙安？", "answer": "冰箱旁", "entity_map": "甲=同学 乙=遥控器 丙=冰箱 丁=厨房", "difficulty": "medium"}
+{"cn": "同学本来想把遥控器放进抽屉，结果放错放进柜子。遥控器在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=同学 乙=遥控器 戊=老板", "difficulty": "hard"}
+{"cn": "妈妈吃了遥控器，把剩下的放进袋子。遥控器在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "袋子里", "entity_map": "甲=妈妈 乙=遥控器 丙=袋子 丁=学校", "difficulty": "medium"}
+{"cn": "小红和('车', '小红')交换了伞和邻居的东西。伞在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "('车', '小红')处", "entity_map": "甲=小红 乙=伞 戊=邻居", "difficulty": "hard"}
+{"cn": "弟弟把衣服放进杯子。衣服在哪？", "mic": "甲置乙入丙。乙安？", "answer": "杯子里", "entity_map": "甲=弟弟 乙=衣服 丙=杯子", "difficulty": "simple"}
+{"cn": "老师把衣服放进柜子。衣服在哪？", "mic": "甲置乙入丙。乙安？", "answer": "柜子里", "entity_map": "甲=老师 乙=衣服 丙=柜子", "difficulty": "simple"}
+{"cn": "同学本来想把眼镜放进抽屉，结果放错放进柜子。眼镜在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=同学 乙=眼镜 戊=弟弟", "difficulty": "hard"}
+{"cn": "小明把遥控器放进盒子。遥控器在哪？", "mic": "甲置乙入丙。乙安？", "answer": "盒子里", "entity_map": "甲=小明 乙=遥控器 丙=盒子", "difficulty": "simple"}
+{"cn": "邻居和同学交换了遥控器和小红的东西。遥控器在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "同学处", "entity_map": "甲=邻居 乙=遥控器 戊=小红", "difficulty": "hard"}
+{"cn": "弟弟吃了眼镜，把剩下的放进书包。眼镜在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "书包里", "entity_map": "甲=弟弟 乙=眼镜 丙=书包 丁=阳台", "difficulty": "medium"}
+{"cn": "爸爸把手机放进抽屉，然后去车。手机在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "抽屉里", "entity_map": "甲=爸爸 乙=手机 丙=抽屉 丁=车", "difficulty": "medium"}
+{"cn": "弟弟吃了帽子，把剩下的放进碗。帽子在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "碗里", "entity_map": "甲=弟弟 乙=帽子 丙=碗 丁=路边", "difficulty": "medium"}
+{"cn": "姐姐吃了遥控器，把剩下的放进篮子。遥控器在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "篮子里", "entity_map": "甲=姐姐 乙=遥控器 丙=篮子 丁=学校", "difficulty": "medium"}
+{"cn": "姐姐和('路边', '弟弟')交换了遥控器和老板的东西。遥控器在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "('路边', '弟弟')处", "entity_map": "甲=姐姐 乙=遥控器 戊=老板", "difficulty": "hard"}
+{"cn": "姐姐吃了手机，把剩下的放进锅。手机在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "锅里", "entity_map": "甲=姐姐 乙=手机 丙=锅 丁=车", "difficulty": "medium"}
+{"cn": "妈妈把眼镜给了('房间', '同学')。眼镜在哪？", "mic": "甲取乙与戊。乙安？", "answer": "('房间', '同学')处", "entity_map": "甲=妈妈 乙=眼镜 戊=老板", "difficulty": "hard"}
+{"cn": "弟弟本来想把球放进抽屉，结果放错放进柜子。球在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=弟弟 乙=球 戊=妈妈", "difficulty": "hard"}
+{"cn": "老师把钱包放进袋子。钱包在哪？", "mic": "甲置乙入丙。乙安？", "answer": "袋子里", "entity_map": "甲=老师 乙=钱包 丙=袋子", "difficulty": "simple"}
+{"cn": "弟弟本来想把钥匙放进抽屉，结果放错放进柜子。钥匙在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=弟弟 乙=钥匙 戊=小红", "difficulty": "hard"}
+{"cn": "小明把钥匙给了('床', '老板')。钥匙在哪？", "mic": "甲取乙与戊。乙安？", "answer": "('床', '老板')处", "entity_map": "甲=小明 乙=钥匙 戊=弟弟", "difficulty": "hard"}
+{"cn": "爸爸把球给了('沙发', '小明')。球在哪？", "mic": "甲取乙与戊。乙安？", "answer": "('沙发', '小明')处", "entity_map": "甲=爸爸 乙=球 戊=爸爸", "difficulty": "hard"}
+{"cn": "妈妈和老师交换了书和老板的东西。书在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "老师处", "entity_map": "甲=妈妈 乙=书 戊=老板", "difficulty": "hard"}
+{"cn": "弟弟从篮子里取出钱包放在公园上。钱包在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "公园上", "entity_map": "甲=弟弟 乙=钱包 丙=篮子 丁=公园", "difficulty": "medium"}
+{"cn": "姐姐把眼镜放进袋子。眼镜在哪？", "mic": "甲置乙入丙。乙安？", "answer": "袋子里", "entity_map": "甲=姐姐 乙=眼镜 丙=袋子", "difficulty": "simple"}
+{"cn": "邻居和老板交换了手机和爸爸的东西。手机在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "老板处", "entity_map": "甲=邻居 乙=手机 戊=爸爸", "difficulty": "hard"}
+{"cn": "姐姐把笔放进盒子。笔在哪？", "mic": "甲置乙入丙。乙安？", "answer": "盒子里", "entity_map": "甲=姐姐 乙=笔 丙=盒子", "difficulty": "simple"}
+{"cn": "爸爸吃了球，把剩下的放进锅。球在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "锅里", "entity_map": "甲=爸爸 乙=球 丙=锅 丁=房间", "difficulty": "medium"}
+{"cn": "老师把眼镜放进箱子里，又把箱子放进柜子。眼镜在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=老师 乙=眼镜 戊=同学", "difficulty": "hard"}
+{"cn": "弟弟把书给了('阳台', '老师')。书在哪？", "mic": "甲取乙与戊。乙安？", "answer": "('阳台', '老师')处", "entity_map": "甲=弟弟 乙=书 戊=小红", "difficulty": "hard"}
+{"cn": "爸爸把帽子放进箱子里，又把箱子放进柜子。帽子在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=爸爸 乙=帽子 戊=老板", "difficulty": "hard"}
+{"cn": "同学把遥控器放进盒子。遥控器在哪？", "mic": "甲置乙入丙。乙安？", "answer": "盒子里", "entity_map": "甲=同学 乙=遥控器 丙=盒子", "difficulty": "simple"}
+{"cn": "妈妈从柜子里取出眼镜放在沙发上。眼镜在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "沙发上", "entity_map": "甲=妈妈 乙=眼镜 丙=柜子 丁=沙发", "difficulty": "medium"}
+{"cn": "老板把手机放进抽屉。手机在哪？", "mic": "甲置乙入丙。乙安？", "answer": "抽屉里", "entity_map": "甲=老板 乙=手机 丙=抽屉", "difficulty": "simple"}
+{"cn": "老板和小明交换了帽子和弟弟的东西。帽子在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "小明处", "entity_map": "甲=老板 乙=帽子 戊=弟弟", "difficulty": "hard"}
+{"cn": "爸爸把遥控器放进冰箱，然后去厨房。遥控器在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "冰箱里", "entity_map": "甲=爸爸 乙=遥控器 丙=冰箱 丁=厨房", "difficulty": "medium"}
+{"cn": "老师本来想把帽子放进抽屉，结果放错放进柜子。帽子在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=老师 乙=帽子 戊=小红", "difficulty": "hard"}
+{"cn": "妈妈把钱包放进篮子，然后去厨房。钱包在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "篮子里", "entity_map": "甲=妈妈 乙=钱包 丙=篮子 丁=厨房", "difficulty": "medium"}
+{"cn": "弟弟吃了笔，把剩下的放进柜子。笔在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "柜子里", "entity_map": "甲=弟弟 乙=笔 丙=柜子 丁=路边", "difficulty": "medium"}
+{"cn": "姐姐把伞放进箱子里，又把箱子放进柜子。伞在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=姐姐 乙=伞 戊=姐姐", "difficulty": "hard"}
+{"cn": "爸爸把遥控器放进杯子，然后去沙发。遥控器在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "杯子里", "entity_map": "甲=爸爸 乙=遥控器 丙=杯子 丁=沙发", "difficulty": "medium"}
+{"cn": "爸爸本来想把帽子放进抽屉，结果放错放进柜子。帽子在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=爸爸 乙=帽子 戊=老板", "difficulty": "hard"}
+{"cn": "妈妈把手机放进杯子。手机在哪？", "mic": "甲置乙入丙。乙安？", "answer": "杯子里", "entity_map": "甲=妈妈 乙=手机 丙=杯子", "difficulty": "simple"}
+{"cn": "老师本来想把书放进抽屉，结果放错放进柜子。书在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=老师 乙=书 戊=妈妈", "difficulty": "hard"}
+{"cn": "邻居把花放进箱子里，又把箱子放进柜子。花在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=邻居 乙=花 戊=邻居", "difficulty": "hard"}
+{"cn": "老板把钱包放进袋子。钱包在哪？", "mic": "甲置乙入丙。乙安？", "answer": "袋子里", "entity_map": "甲=老板 乙=钱包 丙=袋子", "difficulty": "simple"}
+{"cn": "小明把锅里的遥控器倒了出来。遥控器在哪？", "mic": "甲倾丙，乙出。乙安？", "answer": "锅旁", "entity_map": "甲=小明 乙=遥控器 丙=锅 丁=床", "difficulty": "medium"}
+{"cn": "小红本来想把球放进抽屉，结果放错放进柜子。球在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=小红 乙=球 戊=小明", "difficulty": "hard"}
+{"cn": "小明和('阳台', '邻居')交换了球和姐姐的东西。球在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "('阳台', '邻居')处", "entity_map": "甲=小明 乙=球 戊=姐姐", "difficulty": "hard"}
+{"cn": "老师把钱包放进杯子。钱包在哪？", "mic": "甲置乙入丙。乙安？", "answer": "杯子里", "entity_map": "甲=老师 乙=钱包 丙=杯子", "difficulty": "simple"}
+{"cn": "同学把花放进抽屉。花在哪？", "mic": "甲置乙入丙。乙安？", "answer": "抽屉里", "entity_map": "甲=同学 乙=花 丙=抽屉", "difficulty": "simple"}
+{"cn": "爸爸把笔放进柜子，然后去厨房。笔在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "柜子里", "entity_map": "甲=爸爸 乙=笔 丙=柜子 丁=厨房", "difficulty": "medium"}
+{"cn": "姐姐把花放进柜子。花在哪？", "mic": "甲置乙入丙。乙安？", "answer": "柜子里", "entity_map": "甲=姐姐 乙=花 丙=柜子", "difficulty": "simple"}
+{"cn": "小红把帽子给了('桌子', '姐姐')。帽子在哪？", "mic": "甲取乙与戊。乙安？", "answer": "('桌子', '姐姐')处", "entity_map": "甲=小红 乙=帽子 戊=小红", "difficulty": "hard"}
+{"cn": "爸爸把钱包放进冰箱。钱包在哪？", "mic": "甲置乙入丙。乙安？", "answer": "冰箱里", "entity_map": "甲=爸爸 乙=钱包 丙=冰箱", "difficulty": "simple"}
+{"cn": "弟弟从冰箱里取出伞放在家上。伞在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "家上", "entity_map": "甲=弟弟 乙=伞 丙=冰箱 丁=家", "difficulty": "medium"}
+{"cn": "弟弟把眼镜放进抽屉。眼镜在哪？", "mic": "甲置乙入丙。乙安？", "answer": "抽屉里", "entity_map": "甲=弟弟 乙=眼镜 丙=抽屉", "difficulty": "simple"}
+{"cn": "妈妈和弟弟交换了球和同学的东西。球在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "弟弟处", "entity_map": "甲=妈妈 乙=球 戊=同学", "difficulty": "hard"}
+{"cn": "同学和('厨房', '爸爸')交换了遥控器和小红的东西。遥控器在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "('厨房', '爸爸')处", "entity_map": "甲=同学 乙=遥控器 戊=小红", "difficulty": "hard"}
+{"cn": "爸爸把遥控器放进冰箱，然后去阳台。遥控器在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "冰箱里", "entity_map": "甲=爸爸 乙=遥控器 丙=冰箱 丁=阳台", "difficulty": "medium"}
+{"cn": "小红把帽子放进抽屉。帽子在哪？", "mic": "甲置乙入丙。乙安？", "answer": "抽屉里", "entity_map": "甲=小红 乙=帽子 丙=抽屉", "difficulty": "simple"}
+{"cn": "妈妈从抽屉里取出钱包放在车上。钱包在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "车上", "entity_map": "甲=妈妈 乙=钱包 丙=抽屉 丁=车", "difficulty": "medium"}
+{"cn": "小明把伞放进杯子。伞在哪？", "mic": "甲置乙入丙。乙安？", "answer": "杯子里", "entity_map": "甲=小明 乙=伞 丙=杯子", "difficulty": "simple"}
+{"cn": "同学把球放进盒子。球在哪？", "mic": "甲置乙入丙。乙安？", "answer": "盒子里", "entity_map": "甲=同学 乙=球 丙=盒子", "difficulty": "simple"}
+{"cn": "老师把眼镜放进碗。眼镜在哪？", "mic": "甲置乙入丙。乙安？", "answer": "碗里", "entity_map": "甲=老师 乙=眼镜 丙=碗", "difficulty": "simple"}
+{"cn": "小明把球放进书包。球在哪？", "mic": "甲置乙入丙。乙安？", "answer": "书包里", "entity_map": "甲=小明 乙=球 丙=书包", "difficulty": "simple"}
+{"cn": "小明把眼镜放进盒子。眼镜在哪？", "mic": "甲置乙入丙。乙安？", "answer": "盒子里", "entity_map": "甲=小明 乙=眼镜 丙=盒子", "difficulty": "simple"}
+{"cn": "邻居把帽子放进篮子，然后去路边。帽子在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "篮子里", "entity_map": "甲=邻居 乙=帽子 丙=篮子 丁=路边", "difficulty": "medium"}
+{"cn": "弟弟和('沙发', '妈妈')交换了书和老师的东西。书在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "('沙发', '妈妈')处", "entity_map": "甲=弟弟 乙=书 戊=老师", "difficulty": "hard"}
+{"cn": "小红从锅里取出手机放在沙发上。手机在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "沙发上", "entity_map": "甲=小红 乙=手机 丙=锅 丁=沙发", "difficulty": "medium"}
+{"cn": "邻居吃了衣服，把剩下的放进锅。衣服在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "锅里", "entity_map": "甲=邻居 乙=衣服 丙=锅 丁=家", "difficulty": "medium"}
+{"cn": "老师本来想把手机放进抽屉，结果放错放进柜子。手机在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=老师 乙=手机 戊=小红", "difficulty": "hard"}
+{"cn": "邻居和('桌子', '妈妈')交换了球和小红的东西。球在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "('桌子', '妈妈')处", "entity_map": "甲=邻居 乙=球 戊=小红", "difficulty": "hard"}
+{"cn": "小明把柜子里的帽子倒了出来。帽子在哪？", "mic": "甲倾丙，乙出。乙安？", "answer": "柜子旁", "entity_map": "甲=小明 乙=帽子 丙=柜子 丁=路边", "difficulty": "medium"}
+{"cn": "小红把眼镜放进箱子里，又把箱子放进柜子。眼镜在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=小红 乙=眼镜 戊=邻居", "difficulty": "hard"}
+{"cn": "老板把球给了老板。球在哪？", "mic": "甲取乙与戊。乙安？", "answer": "老板处", "entity_map": "甲=老板 乙=球 戊=老板", "difficulty": "hard"}
+{"cn": "同学把篮子里的笔倒了出来。笔在哪？", "mic": "甲倾丙，乙出。乙安？", "answer": "篮子旁", "entity_map": "甲=同学 乙=笔 丙=篮子 丁=学校", "difficulty": "medium"}
+{"cn": "弟弟把帽子放进碗。帽子在哪？", "mic": "甲置乙入丙。乙安？", "answer": "碗里", "entity_map": "甲=弟弟 乙=帽子 丙=碗", "difficulty": "simple"}
+{"cn": "小红从锅里取出球放在车上。球在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "车上", "entity_map": "甲=小红 乙=球 丙=锅 丁=车", "difficulty": "medium"}
+{"cn": "爸爸把帽子放进盒子。帽子在哪？", "mic": "甲置乙入丙。乙安？", "answer": "盒子里", "entity_map": "甲=爸爸 乙=帽子 丙=盒子", "difficulty": "simple"}
+{"cn": "妈妈把钥匙给了('桌子', '老板')。钥匙在哪？", "mic": "甲取乙与戊。乙安？", "answer": "('桌子', '老板')处", "entity_map": "甲=妈妈 乙=钥匙 戊=小红", "difficulty": "hard"}
+{"cn": "邻居把手机放进袋子。手机在哪？", "mic": "甲置乙入丙。乙安？", "answer": "袋子里", "entity_map": "甲=邻居 乙=手机 丙=袋子", "difficulty": "simple"}
+{"cn": "邻居把钥匙放进抽屉。钥匙在哪？", "mic": "甲置乙入丙。乙安？", "answer": "抽屉里", "entity_map": "甲=邻居 乙=钥匙 丙=抽屉", "difficulty": "simple"}
+{"cn": "小红把手机放进盒子。手机在哪？", "mic": "甲置乙入丙。乙安？", "answer": "盒子里", "entity_map": "甲=小红 乙=手机 丙=盒子", "difficulty": "simple"}
+{"cn": "同学把帽子放进袋子。帽子在哪？", "mic": "甲置乙入丙。乙安？", "answer": "袋子里", "entity_map": "甲=同学 乙=帽子 丙=袋子", "difficulty": "simple"}
+{"cn": "老板从抽屉里取出衣服放在公园上。衣服在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "公园上", "entity_map": "甲=老板 乙=衣服 丙=抽屉 丁=公园", "difficulty": "medium"}
+{"cn": "姐姐本来想把球放进抽屉，结果放错放进柜子。球在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=姐姐 乙=球 戊=邻居", "difficulty": "hard"}
+{"cn": "邻居把帽子放进冰箱。帽子在哪？", "mic": "甲置乙入丙。乙安？", "answer": "冰箱里", "entity_map": "甲=邻居 乙=帽子 丙=冰箱", "difficulty": "simple"}
+{"cn": "小红和('公园', '老师')交换了花和小红的东西。花在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "('公园', '老师')处", "entity_map": "甲=小红 乙=花 戊=小红", "difficulty": "hard"}
+{"cn": "小明把钱包放进杯子。钱包在哪？", "mic": "甲置乙入丙。乙安？", "answer": "杯子里", "entity_map": "甲=小明 乙=钱包 丙=杯子", "difficulty": "simple"}
+{"cn": "小明本来想把球放进抽屉，结果放错放进柜子。球在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=小明 乙=球 戊=妈妈", "difficulty": "hard"}
+{"cn": "小红和小明交换了手机和爸爸的东西。手机在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "小明处", "entity_map": "甲=小红 乙=手机 戊=爸爸", "difficulty": "hard"}
+{"cn": "老板本来想把手机放进抽屉，结果放错放进柜子。手机在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=老板 乙=手机 戊=老板", "difficulty": "hard"}
+{"cn": "爸爸把花放进盒子。花在哪？", "mic": "甲置乙入丙。乙安？", "answer": "盒子里", "entity_map": "甲=爸爸 乙=花 丙=盒子", "difficulty": "simple"}
+{"cn": "同学把衣服放进杯子，然后去阳台。衣服在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "杯子里", "entity_map": "甲=同学 乙=衣服 丙=杯子 丁=阳台", "difficulty": "medium"}
+{"cn": "邻居把书放进袋子。书在哪？", "mic": "甲置乙入丙。乙安？", "answer": "袋子里", "entity_map": "甲=邻居 乙=书 丙=袋子", "difficulty": "simple"}
+{"cn": "邻居本来想把帽子放进抽屉，结果放错放进柜子。帽子在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=邻居 乙=帽子 戊=老板", "difficulty": "hard"}
+{"cn": "老师把钥匙放进杯子。钥匙在哪？", "mic": "甲置乙入丙。乙安？", "answer": "杯子里", "entity_map": "甲=老师 乙=钥匙 丙=杯子", "difficulty": "simple"}
+{"cn": "妈妈把钥匙放进冰箱。钥匙在哪？", "mic": "甲置乙入丙。乙安？", "answer": "冰箱里", "entity_map": "甲=妈妈 乙=钥匙 丙=冰箱", "difficulty": "simple"}
+{"cn": "小红把笔放进抽屉，然后去阳台。笔在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "抽屉里", "entity_map": "甲=小红 乙=笔 丙=抽屉 丁=阳台", "difficulty": "medium"}
+{"cn": "弟弟把钱包放进抽屉。钱包在哪？", "mic": "甲置乙入丙。乙安？", "answer": "抽屉里", "entity_map": "甲=弟弟 乙=钱包 丙=抽屉", "difficulty": "simple"}
+{"cn": "爸爸吃了笔，把剩下的放进柜子。笔在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "柜子里", "entity_map": "甲=爸爸 乙=笔 丙=柜子 丁=车", "difficulty": "medium"}
+{"cn": "邻居和邻居交换了花和同学的东西。花在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "邻居处", "entity_map": "甲=邻居 乙=花 戊=同学", "difficulty": "hard"}
+{"cn": "老板把笔放进袋子。笔在哪？", "mic": "甲置乙入丙。乙安？", "answer": "袋子里", "entity_map": "甲=老板 乙=笔 丙=袋子", "difficulty": "simple"}
+{"cn": "弟弟把帽子给了('路边', '弟弟')。帽子在哪？", "mic": "甲取乙与戊。乙安？", "answer": "('路边', '弟弟')处", "entity_map": "甲=弟弟 乙=帽子 戊=弟弟", "difficulty": "hard"}
+{"cn": "邻居把花放进杯子，然后去公园。花在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "杯子里", "entity_map": "甲=邻居 乙=花 丙=杯子 丁=公园", "difficulty": "medium"}
+{"cn": "小明把书给了('厨房', '老板')。书在哪？", "mic": "甲取乙与戊。乙安？", "answer": "('厨房', '老板')处", "entity_map": "甲=小明 乙=书 戊=妈妈", "difficulty": "hard"}
+{"cn": "爸爸把伞放进杯子。伞在哪？", "mic": "甲置乙入丙。乙安？", "answer": "杯子里", "entity_map": "甲=爸爸 乙=伞 丙=杯子", "difficulty": "simple"}
+{"cn": "同学本来想把钱包放进抽屉，结果放错放进柜子。钱包在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=同学 乙=钱包 戊=老师", "difficulty": "hard"}
+{"cn": "邻居把球放进抽屉。球在哪？", "mic": "甲置乙入丙。乙安？", "answer": "抽屉里", "entity_map": "甲=邻居 乙=球 丙=抽屉", "difficulty": "simple"}
+{"cn": "小红把钥匙放进箱子里，又把箱子放进柜子。钥匙在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=小红 乙=钥匙 戊=同学", "difficulty": "hard"}
+{"cn": "小红把袋子里的钥匙倒了出来。钥匙在哪？", "mic": "甲倾丙，乙出。乙安？", "answer": "袋子旁", "entity_map": "甲=小红 乙=钥匙 丙=袋子 丁=路边", "difficulty": "medium"}
+{"cn": "邻居把钥匙放进抽屉。钥匙在哪？", "mic": "甲置乙入丙。乙安？", "answer": "抽屉里", "entity_map": "甲=邻居 乙=钥匙 丙=抽屉", "difficulty": "simple"}
+{"cn": "姐姐把钥匙放进袋子。钥匙在哪？", "mic": "甲置乙入丙。乙安？", "answer": "袋子里", "entity_map": "甲=姐姐 乙=钥匙 丙=袋子", "difficulty": "simple"}
+{"cn": "弟弟吃了钥匙，把剩下的放进抽屉。钥匙在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "抽屉里", "entity_map": "甲=弟弟 乙=钥匙 丙=抽屉 丁=阳台", "difficulty": "medium"}
+{"cn": "弟弟把帽子放进锅。帽子在哪？", "mic": "甲置乙入丙。乙安？", "answer": "锅里", "entity_map": "甲=弟弟 乙=帽子 丙=锅", "difficulty": "simple"}
+{"cn": "弟弟把书放进箱子里，又把箱子放进柜子。书在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=弟弟 乙=书 戊=小红", "difficulty": "hard"}
+{"cn": "老板把球放进箱子里，又把箱子放进柜子。球在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=老板 乙=球 戊=爸爸", "difficulty": "hard"}
+{"cn": "老板把锅里的遥控器倒了出来。遥控器在哪？", "mic": "甲倾丙，乙出。乙安？", "answer": "锅旁", "entity_map": "甲=老板 乙=遥控器 丙=锅 丁=车", "difficulty": "medium"}
+{"cn": "老师本来想把遥控器放进抽屉，结果放错放进柜子。遥控器在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=老师 乙=遥控器 戊=同学", "difficulty": "hard"}
+{"cn": "妈妈把眼镜放进冰箱。眼镜在哪？", "mic": "甲置乙入丙。乙安？", "answer": "冰箱里", "entity_map": "甲=妈妈 乙=眼镜 丙=冰箱", "difficulty": "simple"}
+{"cn": "爸爸把遥控器给了小红。遥控器在哪？", "mic": "甲取乙与戊。乙安？", "answer": "小红处", "entity_map": "甲=爸爸 乙=遥控器 戊=小红", "difficulty": "hard"}
+{"cn": "邻居吃了伞，把剩下的放进柜子。伞在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "柜子里", "entity_map": "甲=邻居 乙=伞 丙=柜子 丁=房间", "difficulty": "medium"}
+{"cn": "老板把柜子里的笔倒了出来。笔在哪？", "mic": "甲倾丙，乙出。乙安？", "answer": "柜子旁", "entity_map": "甲=老板 乙=笔 丙=柜子 丁=学校", "difficulty": "medium"}
+{"cn": "爸爸本来想把花放进抽屉，结果放错放进柜子。花在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=爸爸 乙=花 戊=老板", "difficulty": "hard"}
+{"cn": "小明把手机放进篮子，然后去阳台。手机在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "篮子里", "entity_map": "甲=小明 乙=手机 丙=篮子 丁=阳台", "difficulty": "medium"}
+{"cn": "同学把遥控器放进碗。遥控器在哪？", "mic": "甲置乙入丙。乙安？", "answer": "碗里", "entity_map": "甲=同学 乙=遥控器 丙=碗", "difficulty": "simple"}
+{"cn": "同学把钱包放进杯子。钱包在哪？", "mic": "甲置乙入丙。乙安？", "answer": "杯子里", "entity_map": "甲=同学 乙=钱包 丙=杯子", "difficulty": "simple"}
+{"cn": "同学本来想把笔放进抽屉，结果放错放进柜子。笔在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=同学 乙=笔 戊=小红", "difficulty": "hard"}
+{"cn": "姐姐把笔放进锅。笔在哪？", "mic": "甲置乙入丙。乙安？", "answer": "锅里", "entity_map": "甲=姐姐 乙=笔 丙=锅", "difficulty": "simple"}
+{"cn": "妈妈吃了衣服，把剩下的放进锅。衣服在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "锅里", "entity_map": "甲=妈妈 乙=衣服 丙=锅 丁=桌子", "difficulty": "medium"}
+{"cn": "姐姐吃了球，把剩下的放进杯子。球在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "杯子里", "entity_map": "甲=姐姐 乙=球 丙=杯子 丁=公园", "difficulty": "medium"}
+{"cn": "小红把杯子里的衣服倒了出来。衣服在哪？", "mic": "甲倾丙，乙出。乙安？", "answer": "杯子旁", "entity_map": "甲=小红 乙=衣服 丙=杯子 丁=床", "difficulty": "medium"}
+{"cn": "弟弟和小红交换了笔和爸爸的东西。笔在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "小红处", "entity_map": "甲=弟弟 乙=笔 戊=爸爸", "difficulty": "hard"}
+{"cn": "老板把帽子放进锅。帽子在哪？", "mic": "甲置乙入丙。乙安？", "answer": "锅里", "entity_map": "甲=老板 乙=帽子 丙=锅", "difficulty": "simple"}
+{"cn": "小明本来想把眼镜放进抽屉，结果放错放进柜子。眼镜在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=小明 乙=眼镜 戊=同学", "difficulty": "hard"}
+{"cn": "妈妈把碗里的手机倒了出来。手机在哪？", "mic": "甲倾丙，乙出。乙安？", "answer": "碗旁", "entity_map": "甲=妈妈 乙=手机 丙=碗 丁=地上", "difficulty": "medium"}
+{"cn": "同学把锅里的球倒了出来。球在哪？", "mic": "甲倾丙，乙出。乙安？", "answer": "锅旁", "entity_map": "甲=同学 乙=球 丙=锅 丁=路边", "difficulty": "medium"}
+{"cn": "同学从袋子里取出钱包放在学校上。钱包在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "学校上", "entity_map": "甲=同学 乙=钱包 丙=袋子 丁=学校", "difficulty": "medium"}
+{"cn": "老板把钱包放进柜子，然后去公园。钱包在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "柜子里", "entity_map": "甲=老板 乙=钱包 丙=柜子 丁=公园", "difficulty": "medium"}
+{"cn": "姐姐把眼镜放进锅，然后去沙发。眼镜在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "锅里", "entity_map": "甲=姐姐 乙=眼镜 丙=锅 丁=沙发", "difficulty": "medium"}
+{"cn": "老师从锅里取出帽子放在学校上。帽子在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "学校上", "entity_map": "甲=老师 乙=帽子 丙=锅 丁=学校", "difficulty": "medium"}
+{"cn": "同学把球放进箱子里，又把箱子放进柜子。球在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=同学 乙=球 戊=弟弟", "difficulty": "hard"}
+{"cn": "姐姐把笔放进袋子。笔在哪？", "mic": "甲置乙入丙。乙安？", "answer": "袋子里", "entity_map": "甲=姐姐 乙=笔 丙=袋子", "difficulty": "simple"}
+{"cn": "小明把衣服放进杯子。衣服在哪？", "mic": "甲置乙入丙。乙安？", "answer": "杯子里", "entity_map": "甲=小明 乙=衣服 丙=杯子", "difficulty": "simple"}
+{"cn": "爸爸把书放进袋子。书在哪？", "mic": "甲置乙入丙。乙安？", "answer": "袋子里", "entity_map": "甲=爸爸 乙=书 丙=袋子", "difficulty": "simple"}
+{"cn": "小红吃了眼镜，把剩下的放进冰箱。眼镜在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "冰箱里", "entity_map": "甲=小红 乙=眼镜 丙=冰箱 丁=车", "difficulty": "medium"}
+{"cn": "姐姐把笔放进袋子，然后去桌子。笔在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "袋子里", "entity_map": "甲=姐姐 乙=笔 丙=袋子 丁=桌子", "difficulty": "medium"}
+{"cn": "小红把眼镜放进箱子里，又把箱子放进柜子。眼镜在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=小红 乙=眼镜 戊=姐姐", "difficulty": "hard"}
+{"cn": "小明吃了遥控器，把剩下的放进盒子。遥控器在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "盒子里", "entity_map": "甲=小明 乙=遥控器 丙=盒子 丁=地上", "difficulty": "medium"}
+{"cn": "小红从袋子里取出笔放在沙发上。笔在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "沙发上", "entity_map": "甲=小红 乙=笔 丙=袋子 丁=沙发", "difficulty": "medium"}
+{"cn": "妈妈把手机放进碗，然后去床。手机在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "碗里", "entity_map": "甲=妈妈 乙=手机 丙=碗 丁=床", "difficulty": "medium"}
+{"cn": "弟弟和('路边', '弟弟')交换了钱包和小明的东西。钱包在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "('路边', '弟弟')处", "entity_map": "甲=弟弟 乙=钱包 戊=小明", "difficulty": "hard"}
+{"cn": "小明和('沙发', '妈妈')交换了帽子和老板的东西。帽子在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "('沙发', '妈妈')处", "entity_map": "甲=小明 乙=帽子 戊=老板", "difficulty": "hard"}
+{"cn": "邻居从篮子里取出钱包放在学校上。钱包在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "学校上", "entity_map": "甲=邻居 乙=钱包 丙=篮子 丁=学校", "difficulty": "medium"}
+{"cn": "弟弟把眼镜放进盒子。眼镜在哪？", "mic": "甲置乙入丙。乙安？", "answer": "盒子里", "entity_map": "甲=弟弟 乙=眼镜 丙=盒子", "difficulty": "simple"}
+{"cn": "邻居把球放进箱子里，又把箱子放进柜子。球在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=邻居 乙=球 戊=小红", "difficulty": "hard"}
+{"cn": "小明本来想把手机放进抽屉，结果放错放进柜子。手机在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=小明 乙=手机 戊=老师", "difficulty": "hard"}
+{"cn": "弟弟吃了球，把剩下的放进锅。球在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "锅里", "entity_map": "甲=弟弟 乙=球 丙=锅 丁=沙发", "difficulty": "medium"}
+{"cn": "姐姐把球放进柜子。球在哪？", "mic": "甲置乙入丙。乙安？", "answer": "柜子里", "entity_map": "甲=姐姐 乙=球 丙=柜子", "difficulty": "simple"}
+{"cn": "老师把眼镜放进锅。眼镜在哪？", "mic": "甲置乙入丙。乙安？", "answer": "锅里", "entity_map": "甲=老师 乙=眼镜 丙=锅", "difficulty": "simple"}
+{"cn": "老板把手机给了('阳台', '老板')。手机在哪？", "mic": "甲取乙与戊。乙安？", "answer": "('阳台', '老板')处", "entity_map": "甲=老板 乙=手机 戊=同学", "difficulty": "hard"}
+{"cn": "老板把手机放进书包。手机在哪？", "mic": "甲置乙入丙。乙安？", "answer": "书包里", "entity_map": "甲=老板 乙=手机 丙=书包", "difficulty": "simple"}
+{"cn": "老师把伞放进柜子，然后去家。伞在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "柜子里", "entity_map": "甲=老师 乙=伞 丙=柜子 丁=家", "difficulty": "medium"}
+{"cn": "妈妈吃了衣服，把剩下的放进书包。衣服在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "书包里", "entity_map": "甲=妈妈 乙=衣服 丙=书包 丁=学校", "difficulty": "medium"}
+{"cn": "小明把书放进杯子。书在哪？", "mic": "甲置乙入丙。乙安？", "answer": "杯子里", "entity_map": "甲=小明 乙=书 丙=杯子", "difficulty": "simple"}
+{"cn": "妈妈把抽屉里的遥控器倒了出来。遥控器在哪？", "mic": "甲倾丙，乙出。乙安？", "answer": "抽屉旁", "entity_map": "甲=妈妈 乙=遥控器 丙=抽屉 丁=地上", "difficulty": "medium"}
+{"cn": "老板把书放进柜子。书在哪？", "mic": "甲置乙入丙。乙安？", "answer": "柜子里", "entity_map": "甲=老板 乙=书 丙=柜子", "difficulty": "simple"}
+{"cn": "小红把眼镜给了('床', '邻居')。眼镜在哪？", "mic": "甲取乙与戊。乙安？", "answer": "('床', '邻居')处", "entity_map": "甲=小红 乙=眼镜 戊=妈妈", "difficulty": "hard"}
+{"cn": "小红本来想把手机放进抽屉，结果放错放进柜子。手机在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=小红 乙=手机 戊=妈妈", "difficulty": "hard"}
+{"cn": "老板把伞放进书包，然后去地上。伞在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "书包里", "entity_map": "甲=老板 乙=伞 丙=书包 丁=地上", "difficulty": "medium"}
+{"cn": "爸爸把手机放进冰箱。手机在哪？", "mic": "甲置乙入丙。乙安？", "answer": "冰箱里", "entity_map": "甲=爸爸 乙=手机 丙=冰箱", "difficulty": "simple"}
+{"cn": "姐姐和小明交换了眼镜和弟弟的东西。眼镜在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "小明处", "entity_map": "甲=姐姐 乙=眼镜 戊=弟弟", "difficulty": "hard"}
+{"cn": "邻居把杯子里的钱包倒了出来。钱包在哪？", "mic": "甲倾丙，乙出。乙安？", "answer": "杯子旁", "entity_map": "甲=邻居 乙=钱包 丙=杯子 丁=阳台", "difficulty": "medium"}
+{"cn": "邻居和小明交换了手机和小明的东西。手机在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "小明处", "entity_map": "甲=邻居 乙=手机 戊=小明", "difficulty": "hard"}
+{"cn": "小红把花放进盒子。花在哪？", "mic": "甲置乙入丙。乙安？", "answer": "盒子里", "entity_map": "甲=小红 乙=花 丙=盒子", "difficulty": "simple"}
+{"cn": "同学从锅里取出眼镜放在路边上。眼镜在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "路边上", "entity_map": "甲=同学 乙=眼镜 丙=锅 丁=路边", "difficulty": "medium"}
+{"cn": "小明从锅里取出衣服放在车上。衣服在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "车上", "entity_map": "甲=小明 乙=衣服 丙=锅 丁=车", "difficulty": "medium"}
+{"cn": "老师把钱包放进碗。钱包在哪？", "mic": "甲置乙入丙。乙安？", "answer": "碗里", "entity_map": "甲=老师 乙=钱包 丙=碗", "difficulty": "simple"}
+{"cn": "姐姐和('厨房', '同学')交换了伞和弟弟的东西。伞在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "('厨房', '同学')处", "entity_map": "甲=姐姐 乙=伞 戊=弟弟", "difficulty": "hard"}
+{"cn": "小明把盒子里的球倒了出来。球在哪？", "mic": "甲倾丙，乙出。乙安？", "answer": "盒子旁", "entity_map": "甲=小明 乙=球 丙=盒子 丁=路边", "difficulty": "medium"}
+{"cn": "弟弟把帽子放进柜子。帽子在哪？", "mic": "甲置乙入丙。乙安？", "answer": "柜子里", "entity_map": "甲=弟弟 乙=帽子 丙=柜子", "difficulty": "simple"}
+{"cn": "同学把碗里的书倒了出来。书在哪？", "mic": "甲倾丙，乙出。乙安？", "answer": "碗旁", "entity_map": "甲=同学 乙=书 丙=碗 丁=桌子", "difficulty": "medium"}
+{"cn": "小明把书放进箱子里，又把箱子放进柜子。书在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=小明 乙=书 戊=妈妈", "difficulty": "hard"}
+{"cn": "姐姐把书包里的笔倒了出来。笔在哪？", "mic": "甲倾丙，乙出。乙安？", "answer": "书包旁", "entity_map": "甲=姐姐 乙=笔 丙=书包 丁=公园", "difficulty": "medium"}
+{"cn": "姐姐把书放进杯子。书在哪？", "mic": "甲置乙入丙。乙安？", "answer": "杯子里", "entity_map": "甲=姐姐 乙=书 丙=杯子", "difficulty": "simple"}
+{"cn": "邻居吃了钱包，把剩下的放进杯子。钱包在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "杯子里", "entity_map": "甲=邻居 乙=钱包 丙=杯子 丁=阳台", "difficulty": "medium"}
+{"cn": "小红把花放进盒子。花在哪？", "mic": "甲置乙入丙。乙安？", "answer": "盒子里", "entity_map": "甲=小红 乙=花 丙=盒子", "difficulty": "simple"}
+{"cn": "老师把钥匙放进锅。钥匙在哪？", "mic": "甲置乙入丙。乙安？", "answer": "锅里", "entity_map": "甲=老师 乙=钥匙 丙=锅", "difficulty": "simple"}
+{"cn": "弟弟把钱包放进抽屉。钱包在哪？", "mic": "甲置乙入丙。乙安？", "answer": "抽屉里", "entity_map": "甲=弟弟 乙=钱包 丙=抽屉", "difficulty": "simple"}
+{"cn": "爸爸把衣服放进冰箱。衣服在哪？", "mic": "甲置乙入丙。乙安？", "answer": "冰箱里", "entity_map": "甲=爸爸 乙=衣服 丙=冰箱", "difficulty": "simple"}
+{"cn": "爸爸把花放进袋子。花在哪？", "mic": "甲置乙入丙。乙安？", "answer": "袋子里", "entity_map": "甲=爸爸 乙=花 丙=袋子", "difficulty": "simple"}
+{"cn": "邻居把手机给了弟弟。手机在哪？", "mic": "甲取乙与戊。乙安？", "answer": "弟弟处", "entity_map": "甲=邻居 乙=手机 戊=妈妈", "difficulty": "hard"}
+{"cn": "姐姐从锅里取出书放在桌子上。书在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "桌子上", "entity_map": "甲=姐姐 乙=书 丙=锅 丁=桌子", "difficulty": "medium"}
+{"cn": "同学吃了钱包，把剩下的放进盒子。钱包在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "盒子里", "entity_map": "甲=同学 乙=钱包 丙=盒子 丁=沙发", "difficulty": "medium"}
+{"cn": "邻居本来想把衣服放进抽屉，结果放错放进柜子。衣服在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=邻居 乙=衣服 戊=同学", "difficulty": "hard"}
+{"cn": "妈妈把钱包放进袋子。钱包在哪？", "mic": "甲置乙入丙。乙安？", "answer": "袋子里", "entity_map": "甲=妈妈 乙=钱包 丙=袋子", "difficulty": "simple"}
+{"cn": "小明把球放进冰箱。球在哪？", "mic": "甲置乙入丙。乙安？", "answer": "冰箱里", "entity_map": "甲=小明 乙=球 丙=冰箱", "difficulty": "simple"}
+{"cn": "老师把帽子放进箱子里，又把箱子放进柜子。帽子在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=老师 乙=帽子 戊=爸爸", "difficulty": "hard"}
+{"cn": "妈妈把钱包放进抽屉。钱包在哪？", "mic": "甲置乙入丙。乙安？", "answer": "抽屉里", "entity_map": "甲=妈妈 乙=钱包 丙=抽屉", "difficulty": "simple"}
+{"cn": "邻居本来想把笔放进抽屉，结果放错放进柜子。笔在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=邻居 乙=笔 戊=妈妈", "difficulty": "hard"}
+{"cn": "同学把笔放进抽屉。笔在哪？", "mic": "甲置乙入丙。乙安？", "answer": "抽屉里", "entity_map": "甲=同学 乙=笔 丙=抽屉", "difficulty": "simple"}
+{"cn": "小明把手机放进书包。手机在哪？", "mic": "甲置乙入丙。乙安？", "answer": "书包里", "entity_map": "甲=小明 乙=手机 丙=书包", "difficulty": "simple"}
+{"cn": "老师从篮子里取出球放在公园上。球在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "公园上", "entity_map": "甲=老师 乙=球 丙=篮子 丁=公园", "difficulty": "medium"}
+{"cn": "弟弟把伞放进冰箱。伞在哪？", "mic": "甲置乙入丙。乙安？", "answer": "冰箱里", "entity_map": "甲=弟弟 乙=伞 丙=冰箱", "difficulty": "simple"}
+{"cn": "妈妈吃了笔，把剩下的放进锅。笔在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "锅里", "entity_map": "甲=妈妈 乙=笔 丙=锅 丁=桌子", "difficulty": "medium"}
+{"cn": "爸爸把钱包放进柜子。钱包在哪？", "mic": "甲置乙入丙。乙安？", "answer": "柜子里", "entity_map": "甲=爸爸 乙=钱包 丙=柜子", "difficulty": "simple"}
+{"cn": "老板把伞放进书包。伞在哪？", "mic": "甲置乙入丙。乙安？", "answer": "书包里", "entity_map": "甲=老板 乙=伞 丙=书包", "difficulty": "simple"}
+{"cn": "老师从杯子里取出手机放在学校上。手机在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "学校上", "entity_map": "甲=老师 乙=手机 丙=杯子 丁=学校", "difficulty": "medium"}
+{"cn": "邻居把花给了姐姐。花在哪？", "mic": "甲取乙与戊。乙安？", "answer": "姐姐处", "entity_map": "甲=邻居 乙=花 戊=邻居", "difficulty": "hard"}
+{"cn": "姐姐把遥控器放进冰箱，然后去公园。遥控器在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "冰箱里", "entity_map": "甲=姐姐 乙=遥控器 丙=冰箱 丁=公园", "difficulty": "medium"}
+{"cn": "小红把球放进杯子，然后去桌子。球在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "杯子里", "entity_map": "甲=小红 乙=球 丙=杯子 丁=桌子", "difficulty": "medium"}
+{"cn": "小明从杯子里取出钱包放在学校上。钱包在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "学校上", "entity_map": "甲=小明 乙=钱包 丙=杯子 丁=学校", "difficulty": "medium"}
+{"cn": "同学把衣服放进碗。衣服在哪？", "mic": "甲置乙入丙。乙安？", "answer": "碗里", "entity_map": "甲=同学 乙=衣服 丙=碗", "difficulty": "simple"}
+{"cn": "老师吃了书，把剩下的放进冰箱。书在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "冰箱里", "entity_map": "甲=老师 乙=书 丙=冰箱 丁=房间", "difficulty": "medium"}
+{"cn": "小红把笔放进篮子。笔在哪？", "mic": "甲置乙入丙。乙安？", "answer": "篮子里", "entity_map": "甲=小红 乙=笔 丙=篮子", "difficulty": "simple"}
+{"cn": "姐姐本来想把眼镜放进抽屉，结果放错放进柜子。眼镜在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=姐姐 乙=眼镜 戊=爸爸", "difficulty": "hard"}
+{"cn": "老板把伞放进杯子。伞在哪？", "mic": "甲置乙入丙。乙安？", "answer": "杯子里", "entity_map": "甲=老板 乙=伞 丙=杯子", "difficulty": "simple"}
+{"cn": "小红吃了眼镜，把剩下的放进篮子。眼镜在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "篮子里", "entity_map": "甲=小红 乙=眼镜 丙=篮子 丁=地上", "difficulty": "medium"}
+{"cn": "爸爸吃了帽子，把剩下的放进锅。帽子在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "锅里", "entity_map": "甲=爸爸 乙=帽子 丙=锅 丁=路边", "difficulty": "medium"}
+{"cn": "同学从冰箱里取出伞放在桌子上。伞在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "桌子上", "entity_map": "甲=同学 乙=伞 丙=冰箱 丁=桌子", "difficulty": "medium"}
+{"cn": "姐姐把笔放进篮子。笔在哪？", "mic": "甲置乙入丙。乙安？", "answer": "篮子里", "entity_map": "甲=姐姐 乙=笔 丙=篮子", "difficulty": "simple"}
+{"cn": "姐姐吃了钥匙，把剩下的放进袋子。钥匙在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "袋子里", "entity_map": "甲=姐姐 乙=钥匙 丙=袋子 丁=公园", "difficulty": "medium"}
+{"cn": "同学把手机给了爸爸。手机在哪？", "mic": "甲取乙与戊。乙安？", "answer": "爸爸处", "entity_map": "甲=同学 乙=手机 戊=小红", "difficulty": "hard"}
+{"cn": "爸爸和('车', '小红')交换了球和姐姐的东西。球在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "('车', '小红')处", "entity_map": "甲=爸爸 乙=球 戊=姐姐", "difficulty": "hard"}
+{"cn": "弟弟把书放进柜子，然后去学校。书在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "柜子里", "entity_map": "甲=弟弟 乙=书 丙=柜子 丁=学校", "difficulty": "medium"}
+{"cn": "弟弟把篮子里的手机倒了出来。手机在哪？", "mic": "甲倾丙，乙出。乙安？", "answer": "篮子旁", "entity_map": "甲=弟弟 乙=手机 丙=篮子 丁=沙发", "difficulty": "medium"}
+{"cn": "姐姐把遥控器放进袋子。遥控器在哪？", "mic": "甲置乙入丙。乙安？", "answer": "袋子里", "entity_map": "甲=姐姐 乙=遥控器 丙=袋子", "difficulty": "simple"}
+{"cn": "老师把帽子给了('路边', '弟弟')。帽子在哪？", "mic": "甲取乙与戊。乙安？", "answer": "('路边', '弟弟')处", "entity_map": "甲=老师 乙=帽子 戊=弟弟", "difficulty": "hard"}
+{"cn": "弟弟吃了遥控器，把剩下的放进杯子。遥控器在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "杯子里", "entity_map": "甲=弟弟 乙=遥控器 丙=杯子 丁=阳台", "difficulty": "medium"}
+{"cn": "小明本来想把衣服放进抽屉，结果放错放进柜子。衣服在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=小明 乙=衣服 戊=老板", "difficulty": "hard"}
+{"cn": "小明把球放进盒子。球在哪？", "mic": "甲置乙入丙。乙安？", "answer": "盒子里", "entity_map": "甲=小明 乙=球 丙=盒子", "difficulty": "simple"}
+{"cn": "弟弟把书放进柜子。书在哪？", "mic": "甲置乙入丙。乙安？", "answer": "柜子里", "entity_map": "甲=弟弟 乙=书 丙=柜子", "difficulty": "simple"}
+{"cn": "弟弟把衣服放进柜子，然后去桌子。衣服在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "柜子里", "entity_map": "甲=弟弟 乙=衣服 丙=柜子 丁=桌子", "difficulty": "medium"}
+{"cn": "小红和姐姐交换了花和弟弟的东西。花在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "姐姐处", "entity_map": "甲=小红 乙=花 戊=弟弟", "difficulty": "hard"}
+{"cn": "弟弟把书放进抽屉，然后去沙发。书在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "抽屉里", "entity_map": "甲=弟弟 乙=书 丙=抽屉 丁=沙发", "difficulty": "medium"}
+{"cn": "弟弟和姐姐交换了钥匙和小红的东西。钥匙在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "姐姐处", "entity_map": "甲=弟弟 乙=钥匙 戊=小红", "difficulty": "hard"}
+{"cn": "爸爸把花放进箱子里，又把箱子放进柜子。花在哪？", "mic": "甲置乙入丙，复置丙入丁。乙安？", "answer": "箱子里", "entity_map": "甲=爸爸 乙=花 戊=老师", "difficulty": "hard"}
+{"cn": "小红吃了遥控器，把剩下的放进冰箱。遥控器在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "冰箱里", "entity_map": "甲=小红 乙=遥控器 丙=冰箱 丁=地上", "difficulty": "medium"}
+{"cn": "老师把书放进锅。书在哪？", "mic": "甲置乙入丙。乙安？", "answer": "锅里", "entity_map": "甲=老师 乙=书 丙=锅", "difficulty": "simple"}
+{"cn": "同学和('地上', '姐姐')交换了笔和老师的东西。笔在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "('地上', '姐姐')处", "entity_map": "甲=同学 乙=笔 戊=老师", "difficulty": "hard"}
+{"cn": "老师从盒子里取出钥匙放在路边上。钥匙在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "路边上", "entity_map": "甲=老师 乙=钥匙 丙=盒子 丁=路边", "difficulty": "medium"}
+{"cn": "姐姐吃了笔，把剩下的放进篮子。笔在哪？", "mic": "甲啖乙，置余入丙。乙安？", "answer": "篮子里", "entity_map": "甲=姐姐 乙=笔 丙=篮子 丁=沙发", "difficulty": "medium"}
+{"cn": "爸爸把眼镜放进抽屉。眼镜在哪？", "mic": "甲置乙入丙。乙安？", "answer": "抽屉里", "entity_map": "甲=爸爸 乙=眼镜 丙=抽屉", "difficulty": "simple"}
+{"cn": "邻居把笔放进书包。笔在哪？", "mic": "甲置乙入丙。乙安？", "answer": "书包里", "entity_map": "甲=邻居 乙=笔 丙=书包", "difficulty": "simple"}
+{"cn": "爸爸把遥控器放进碗。遥控器在哪？", "mic": "甲置乙入丙。乙安？", "answer": "碗里", "entity_map": "甲=爸爸 乙=遥控器 丙=碗", "difficulty": "simple"}
+{"cn": "姐姐和('学校', '老板')交换了遥控器和小明的东西。遥控器在哪？", "mic": "甲与戊易乙与丁。乙安？", "answer": "('学校', '老板')处", "entity_map": "甲=姐姐 乙=遥控器 戊=小明", "difficulty": "hard"}
+{"cn": "小红把笔放进碗。笔在哪？", "mic": "甲置乙入丙。乙安？", "answer": "碗里", "entity_map": "甲=小红 乙=笔 丙=碗", "difficulty": "simple"}
+{"cn": "邻居本来想把手机放进抽屉，结果放错放进柜子。手机在哪？", "mic": "甲本欲置乙入丙，误入丁。乙安？", "answer": "柜子里", "entity_map": "甲=邻居 乙=手机 戊=邻居", "difficulty": "hard"}
+{"cn": "爸爸把伞放进柜子。伞在哪？", "mic": "甲置乙入丙。乙安？", "answer": "柜子里", "entity_map": "甲=爸爸 乙=伞 丙=柜子", "difficulty": "simple"}
+{"cn": "小明把手机放进袋子。手机在哪？", "mic": "甲置乙入丙。乙安？", "answer": "袋子里", "entity_map": "甲=小明 乙=手机 丙=袋子", "difficulty": "simple"}
+{"cn": "爸爸把盒子里的手机倒了出来。手机在哪？", "mic": "甲倾丙，乙出。乙安？", "answer": "盒子旁", "entity_map": "甲=爸爸 乙=手机 丙=盒子 丁=桌子", "difficulty": "medium"}
+{"cn": "爸爸把手机放进碗，然后去沙发。手机在哪？", "mic": "甲置乙入丙，乃往丁。归，乙安？", "answer": "碗里", "entity_map": "甲=爸爸 乙=手机 丙=碗 丁=沙发", "difficulty": "medium"}
+{"cn": "小红从锅里取出书放在地上上。书在哪？", "mic": "甲自丙取乙，置丁上。乙安？", "answer": "地上上", "entity_map": "甲=小红 乙=书 丙=锅 丁=地上", "difficulty": "medium"}
+{"cn": "爸爸把眼镜放进篮子。眼镜在哪？", "mic": "甲置乙入丙。乙安？", "answer": "篮子里", "entity_map": "甲=爸爸 乙=眼镜 丙=篮子", "difficulty": "simple"}
+{"cn": "邻居把衣服放进书包。衣服在哪？", "mic": "甲置乙入丙。乙安？", "answer": "书包里", "entity_map": "甲=邻居 乙=衣服 丙=书包", "difficulty": "simple"}
